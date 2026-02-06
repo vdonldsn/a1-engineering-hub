@@ -67,25 +67,48 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission (ready for Resend integration later)
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      const response = await fetch(
+        "https://hook.us2.make.com/9y3z84y3i7e3lpncfc4vql28oq37ji94",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
-    toast({
-      title: "Quote Request Submitted!",
-      description: "We'll get back to you within 24 hours.",
-    });
+      if (!response.ok) {
+        throw new Error("Failed to submit form");
+      }
 
-    // Reset form
-    setFormData({
-      name: "",
-      phone: "",
-      email: "",
-      address: "",
-      propertyType: "",
-      services: [],
-      description: "",
-    });
-    setIsSubmitting(false);
+      toast({
+        title: "Quote Request Submitted!",
+        description: "We'll get back to you within 24 hours.",
+      });
+
+      // Reset form
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        address: "",
+        propertyType: "",
+        services: [],
+        description: "",
+      });
+    } catch (error) {
+      toast({
+        title: "Submission Error",
+        description:
+          "Failed to submit your quote request. Please try again.",
+        variant: "destructive",
+      });
+      console.error("Form submission error:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
