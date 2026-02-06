@@ -38,25 +38,26 @@ export function Header() {
           : "bg-transparent"
       )}
     >
-      <div className="section-container">
-        <nav className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
+      <div className="w-full px-4 sm:px-6 lg:pl-8 lg:pr-8">
+        {/* Desktop: h-24 (96px), Mobile: h-[72px] */}
+        <nav className="flex items-center justify-between h-[72px] md:h-24">
+          {/* Logo - Desktop: 60px, Mobile: 44px, with proper left padding */}
+          <Link to="/" className="flex items-center pl-2 md:pl-4">
             <img
               src={logo}
               alt="A1 Engineering"
-              className="h-12 w-auto"
+              className="h-11 md:h-[60px] w-auto"
             />
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          {/* Desktop Navigation - 40px gap from logo, max 16px font */}
+          <div className="hidden md:flex items-center gap-6 ml-10">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 to={link.href}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-primary",
+                  "text-base font-medium transition-colors hover:text-primary",
                   location.pathname === link.href
                     ? "text-primary"
                     : isScrolled
@@ -83,9 +84,9 @@ export function Header() {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Button - centered with logo */}
           <button
-            className="md:hidden p-2 text-foreground"
+            className="md:hidden p-2 text-foreground flex items-center justify-center"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
