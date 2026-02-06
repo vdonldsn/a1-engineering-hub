@@ -1,39 +1,48 @@
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, Clock, Shield, Award, BadgeCheck } from "lucide-react";
 import logo from "@/assets/A1_Engineering_Logo.png";
-
-const serviceLinks = [
-  { name: "Planning & Design", href: "/services#planning" },
-  { name: "Engineering & Structural", href: "/services#engineering" },
-  { name: "Green & Energy", href: "/services#green" },
-  { name: "PE Electrical", href: "/services#electrical" },
-  { name: "Permitting", href: "/services#permitting" },
-];
-
-const quickLinks = [
-  { name: "Home", href: "/" },
-  { name: "Services", href: "/services" },
-  { name: "About Us", href: "/about" },
-  { name: "Contact", href: "/contact" },
-  { name: "Get a Quote", href: "/contact" },
-];
-
+const serviceLinks = [{
+  name: "Planning & Design",
+  href: "/services#planning"
+}, {
+  name: "Engineering & Structural",
+  href: "/services#engineering"
+}, {
+  name: "Green & Energy",
+  href: "/services#green"
+}, {
+  name: "PE Electrical",
+  href: "/services#electrical"
+}, {
+  name: "Permitting",
+  href: "/services#permitting"
+}];
+const quickLinks = [{
+  name: "Home",
+  href: "/"
+}, {
+  name: "Services",
+  href: "/services"
+}, {
+  name: "About Us",
+  href: "/about"
+}, {
+  name: "Contact",
+  href: "/contact"
+}, {
+  name: "Get a Quote",
+  href: "/contact"
+}];
 const statesCertified = ["Tennessee", "Texas", "Arizona", "Florida"];
-
 export function Footer() {
-  return (
-    <footer className="bg-secondary text-secondary-foreground">
+  return <footer className="bg-secondary text-secondary-foreground">
       {/* Main Footer */}
       <div className="section-container py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="lg:col-span-1">
             <Link to="/" className="inline-block mb-6">
-              <img
-                src={logo}
-                alt="A1 Engineering"
-                className="h-12 w-auto brightness-0 invert"
-              />
+              <img src={logo} alt="A1 Engineering" className="h-12 w-auto brightness-0 invert" />
             </Link>
             <p className="text-steel/80 text-sm leading-relaxed mb-6">
               US-Based and Led by Licensed Professional Engineers. From survey to
@@ -41,15 +50,10 @@ export function Footer() {
               precision and expertise.
             </p>
             <div className="flex flex-wrap gap-2">
-              {statesCertified.map((state) => (
-                <span
-                  key={state}
-                  className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary/20 text-primary-foreground text-xs font-medium"
-                >
+              {statesCertified.map(state => <span key={state} className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary/20 text-primary-foreground text-xs font-medium">
                   <BadgeCheck className="h-3 w-3" />
                   {state}
-                </span>
-              ))}
+                </span>)}
             </div>
           </div>
 
@@ -57,16 +61,11 @@ export function Footer() {
           <div>
             <h4 className="font-heading text-lg font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3">
-              {quickLinks.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    to={link.href}
-                    className="text-steel/80 hover:text-primary-foreground transition-colors text-sm"
-                  >
+              {quickLinks.map(link => <li key={link.name}>
+                  <Link to={link.href} className="text-steel/80 hover:text-primary-foreground transition-colors text-sm">
                     {link.name}
                   </Link>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
@@ -74,16 +73,11 @@ export function Footer() {
           <div>
             <h4 className="font-heading text-lg font-semibold mb-6">Our Services</h4>
             <ul className="space-y-3">
-              {serviceLinks.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    to={link.href}
-                    className="text-steel/80 hover:text-primary-foreground transition-colors text-sm"
-                  >
+              {serviceLinks.map(link => <li key={link.name}>
+                  <Link to={link.href} className="text-steel/80 hover:text-primary-foreground transition-colors text-sm">
                     {link.name}
                   </Link>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
@@ -101,21 +95,13 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
-                <a
-                  href="tel:+1234567890"
-                  className="text-steel/80 hover:text-primary-foreground transition-colors text-sm"
-                >
+                <a href="tel:+1234567890" className="text-steel/80 hover:text-primary-foreground transition-colors text-sm">
                   (123) 456-7890
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
-                <a
-                  href="mailto:info@a1engineering.com"
-                  className="text-steel/80 hover:text-primary-foreground transition-colors text-sm"
-                >
-                  info@a1engineering.com
-                </a>
+                <a href="mailto:info@a1engineering.com" className="text-steel/80 hover:text-primary-foreground transition-colors text-sm">contact@a1engineering.com</a>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="h-5 w-5 text-primary shrink-0" />
@@ -164,6 +150,5 @@ export function Footer() {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 }
