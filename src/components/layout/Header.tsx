@@ -38,11 +38,10 @@ export function Header() {
           : "bg-transparent"
       )}
     >
-      <div className="w-full px-4 sm:px-6 lg:px-7">
-        {/* Desktop Header - 80px height */}
-        <nav className="hidden md:flex items-center justify-between h-20">
-          {/* Logo - 48px height with left padding */}
-          <Link to="/" className="flex items-center pl-7">
+      <div className="section-container">
+        <nav className="flex items-center justify-between h-20">
+          {/* Logo */}
+          <Link to="/" className="flex items-center gap-3">
             <img
               src={logo}
               alt="A1 Engineering"
@@ -50,8 +49,8 @@ export function Header() {
             />
           </Link>
 
-          {/* Desktop Navigation - centered with increased gap from logo */}
-          <div className="flex items-center gap-8 ml-16">
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -60,6 +59,8 @@ export function Header() {
                   "text-sm font-medium transition-colors hover:text-primary",
                   location.pathname === link.href
                     ? "text-primary"
+                    : isScrolled
+                    ? "text-foreground"
                     : "text-foreground"
                 )}
               >
@@ -68,8 +69,8 @@ export function Header() {
             ))}
           </div>
 
-          {/* CTA Button - vertically centered */}
-          <div className="flex items-center gap-4">
+          {/* CTA Button */}
+          <div className="hidden md:flex items-center gap-4">
             <a
               href="tel:+1234567890"
               className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
@@ -81,22 +82,10 @@ export function Header() {
               <Link to="/contact">Get a Quote</Link>
             </Button>
           </div>
-        </nav>
 
-        {/* Mobile Header - 64px height */}
-        <nav className="flex md:hidden items-center justify-between h-16">
-          {/* Logo - 36px height with left padding */}
-          <Link to="/" className="flex items-center pl-[18px]">
-            <img
-              src={logo}
-              alt="A1 Engineering"
-              className="h-9 w-auto"
-            />
-          </Link>
-
-          {/* Mobile Menu Button - vertically centered */}
+          {/* Mobile Menu Button */}
           <button
-            className="p-2 text-foreground flex items-center"
+            className="md:hidden p-2 text-foreground"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -111,7 +100,7 @@ export function Header() {
         {/* Mobile Menu */}
         <div
           className={cn(
-            "md:hidden overflow-hidden transition-all duration-300 ease-in-out px-[18px]",
+            "md:hidden overflow-hidden transition-all duration-300 ease-in-out",
             isMobileMenuOpen ? "max-h-96 pb-6" : "max-h-0"
           )}
         >
