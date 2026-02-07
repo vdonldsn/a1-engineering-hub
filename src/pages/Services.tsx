@@ -189,15 +189,14 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Services Accordion */}
+      {/* Services Accordion - REMOVED id ATTRIBUTES TO PREVENT BOTTOM SCROLLING */}
       <section className="py-16 bg-background">
         <div className="section-container">
           <div className="space-y-8">
             {services.map((category) => (
               <div
                 key={category.id}
-                id={category.id}
-                className="glass-card rounded-2xl overflow-hidden scroll-mt-24"
+                className="glass-card rounded-2xl overflow-hidden"
               >
                 {/* Category Header */}
                 <div className="p-6 md:p-8 border-b border-border bg-gradient-to-r from-primary/5 to-transparent">

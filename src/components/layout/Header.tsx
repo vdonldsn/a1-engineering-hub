@@ -27,6 +27,8 @@ export function Header() {
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
+    // Scroll to top when navigation occurs
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [location.pathname]);
 
   return (
@@ -39,14 +41,14 @@ export function Header() {
       )}
     >
       <div className="w-full px-4 sm:px-6 lg:pl-8 lg:pr-8">
-        {/* Desktop: h-24 (96px), Mobile: h-[72px] */}
-        <nav className="flex items-center justify-between h-[72px] md:h-24">
-          {/* Logo - Desktop: 60px, Mobile: 44px, with proper left padding */}
+        {/* Desktop: h-28 (112px), Mobile: h-20 (80px) - Increased for larger logo */}
+        <nav className="flex items-center justify-between h-20 md:h-28">
+          {/* Logo - INCREASED SIZE: Desktop: 80px (was 60px), Mobile: 56px (was 44px) */}
           <Link to="/" className="flex items-center pl-2 md:pl-4">
             <img
               src={logo}
               alt="A1 Engineering"
-              className="h-11 md:h-[60px] w-auto"
+              className="h-14 md:h-20 w-auto"
             />
           </Link>
 
@@ -70,14 +72,14 @@ export function Header() {
             ))}
           </div>
 
-          {/* CTA Button */}
+          {/* CTA Button - UPDATED PHONE NUMBER */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="tel:+1234567890"
+              href="tel:+12143829584"
               className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
             >
               <Phone className="h-4 w-4" />
-              <span>(123) 456-7890</span>
+              <span>(214) 382-9584</span>
             </a>
             <Button asChild className="gradient-metallic hover:opacity-90 transition-opacity">
               <Link to="/contact">Get a Quote</Link>
@@ -98,7 +100,7 @@ export function Header() {
           </button>
         </nav>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu - UPDATED PHONE NUMBER */}
         <div
           className={cn(
             "md:hidden overflow-hidden transition-all duration-300 ease-in-out",
@@ -122,11 +124,11 @@ export function Header() {
             ))}
             <div className="flex flex-col gap-3 pt-4">
               <a
-                href="tel:+1234567890"
+                href="tel:+12143829584"
                 className="flex items-center gap-2 text-sm font-medium text-muted-foreground"
               >
                 <Phone className="h-4 w-4" />
-                <span>(123) 456-7890</span>
+                <span>(214) 382-9584</span>
               </a>
               <Button asChild className="gradient-metallic w-full">
                 <Link to="/contact">Get a Quote</Link>
