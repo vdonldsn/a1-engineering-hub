@@ -286,11 +286,11 @@ export default function Index() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section - UPDATED "Meet Our Team" button with blue background */}
       <section className="py-24 gradient-metallic relative overflow-hidden">
         {/* Decorative */}
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDBoNDB2NDBIMHoiLz48cGF0aCBkPSJNMCAwaDFMNDEgNDB2LTFMMCAweiIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDUpIi8+PC9nPjwvc3ZnPg==')] opacity-50" />
-        
+
         <div className="section-container relative z-10">
           <div className="max-w-3xl mx-auto text-center text-primary-foreground">
             <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
@@ -310,11 +310,11 @@ export default function Index() {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
+              {/* UPDATED: Added blue background (bg-blue-600) to Meet Our Team button for visibility */}
               <Button
                 asChild
-                variant="outline"
                 size="lg"
-                className="border-2 border-white text-white hover:bg-white/10 text-base px-8"
+                className="bg-blue-600 border-2 border-blue-600 text-white hover:bg-blue-700 hover:border-blue-700 text-base px-8"
               >
                 <Link to="/about">Meet Our Team</Link>
               </Button>

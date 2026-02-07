@@ -128,6 +128,21 @@
     font-family: 'Montserrat', system-ui, sans-serif;
     @apply font-bold tracking-tight;
   }
+
+  /* SCROLL MARGIN TOP - Fixes navigation scrolling to top of sections instead of bottom */
+  /* This creates space for the fixed header when scrolling to anchor links */
+  section[id],
+  div[id] {
+    scroll-margin-top: 120px; /* Adjusted for larger header (was 80px) */
+  }
+
+  /* For mobile devices with smaller header */
+  @media (max-width: 768px) {
+    section[id],
+    div[id] {
+      scroll-margin-top: 90px;
+    }
+  }
 }
 
 @layer components {

@@ -279,7 +279,7 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Contact Info Sidebar */}
+            {/* Contact Info Sidebar - UPDATED PHONE AND EMAIL */}
             <div className="space-y-6">
               {/* Contact Details */}
               <div className="glass-card rounded-2xl p-6">
@@ -306,10 +306,10 @@ export default function Contact() {
                     <div>
                       <div className="font-medium text-foreground">Phone</div>
                       <a
-                        href="tel:+1234567890"
+                        href="tel:+12143829584"
                         className="text-sm text-muted-foreground hover:text-primary transition-colors"
                       >
-                        (123) 456-7890
+                        (214) 382-9584
                       </a>
                     </div>
                   </li>
@@ -320,10 +320,10 @@ export default function Contact() {
                     <div>
                       <div className="font-medium text-foreground">Email</div>
                       <a
-                        href="mailto:info@a1engineering.com"
+                        href="mailto:contact@a1engineering.com"
                         className="text-sm text-muted-foreground hover:text-primary transition-colors"
                       >
-                        info@a1engineering.com
+                        contact@a1engineering.com
                       </a>
                     </div>
                   </li>
