@@ -46,10 +46,10 @@ const propertyTypes = [
 
 const serviceOptions = [
   { id: "planning", label: "Planning & Design" },
-  { id: "engineering", label: "Engineering & Structural" },
-  { id: "green", label: "Green, Energy & Testing" },
-  { id: "electrical", label: "PE Electrical Engineering" },
-  { id: "permitting", label: "Permitting & Operations" },
+  { id: "land-survey", label: "Land Survey (DFW Only)" },
+  { id: "electrical", label: "Engineering Seal (TX, TN, AZ, FL)" },
+  { id: "permitting", label: "Expedited Permit (DFW Only)" },
+  { id: "engineering", label: "Drawings - Arch/Civil/Structural/MEP" },
 ];
 
 const urgencyOptions = [
