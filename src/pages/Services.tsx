@@ -15,6 +15,7 @@ import {
   ClipboardList,
   ArrowRight,
   CheckCircle2,
+  MapPin,
 } from "lucide-react";
 
 const services = [
@@ -43,6 +44,30 @@ const services = [
       {
         name: "Planning & Zoning Consultations",
         description: "Expert guidance on zoning requirements, variances, and planning approvals.",
+      },
+    ],
+  },
+  {
+    id: "land-survey",
+    title: "Land Survey (DFW Only)",
+    icon: MapPin,
+    description: "Precision land surveying services for the DFW area, supporting accurate site documentation and legal compliance.",
+    items: [
+      {
+        name: "Boundary & Legal Analysis",
+        description: "Establishing precise property lines through historical research and field measurements to secure land rights.",
+      },
+      {
+        name: "Topographic Mapping",
+        description: "Capturing 3D elevation data and site features to provide a foundation for accurate engineering and drainage design.",
+      },
+      {
+        name: "Utility & Asset Location",
+        description: "Identifying and mapping existing infrastructure to ensure safe excavation and seamless utility integration.",
+      },
+      {
+        name: "Construction Staking",
+        description: "Translating digital blueprints into physical markers on-site to guide accurate grading and structural placement.",
       },
     ],
   },
