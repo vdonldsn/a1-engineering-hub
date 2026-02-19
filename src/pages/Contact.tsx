@@ -53,22 +53,16 @@ const serviceOptions = [
 ];
 
 const urgencyOptions = [
+  { value: "immediately", label: "Immediately" },
   { value: "3-5 days", label: "3–5 days" },
   { value: "7-14 days", label: "7–14 days" },
   { value: "no-rush", label: "No rush" },
 ];
 
 const heardFromOptions = [
-  { value: "Facebook Ad", label: "Facebook Ad" },
-  { value: "Google Ad", label: "Google Ad" },
-  { value: "Google Search (non-ad)", label: "Google Search (non-ad)" },
-  { value: "Google Maps / Business Profile", label: "Google Maps / Business Profile" },
-  { value: "Instagram", label: "Instagram" },
-  { value: "TikTok", label: "TikTok" },
+  { value: "Facebook", label: "Facebook" },
+  { value: "Google", label: "Google" },
   { value: "LinkedIn", label: "LinkedIn" },
-  { value: "YouTube", label: "YouTube" },
-  { value: "Referral", label: "Referral" },
-  { value: "Repeat Customer", label: "Repeat Customer" },
   { value: "Other", label: "Other" },
 ];
 
@@ -98,8 +92,8 @@ function inferHeardFrom(utm: UtmParams): string {
   const med = utm.utm_medium.toLowerCase();
   const isPaid = med === "cpc" || med === "paid";
 
-  if (src.includes("facebook") && isPaid) return "Facebook Ad";
-  if (src.includes("google") && isPaid) return "Google Ad";
+  if (src.includes("facebook") && isPaid) return "Facebook";
+  if (src.includes("google") && isPaid) return "Google";
   return "";
 }
 
