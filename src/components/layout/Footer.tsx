@@ -154,7 +154,8 @@ export function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-steel/60">
             <p>© {new Date().getFullYear()} A1 Engineering. All rights reserved.</p>
             <div className="flex items-center gap-6">
-              <Link to="/privacy" className="hover:text-primary-foreground transition-colors">
+              {/* UPDATED: Changed from /privacy to /privacy-policy */}
+              <Link to="/privacy-policy" className="hover:text-primary-foreground transition-colors">
                 Privacy Policy
               </Link>
               <Link to="/terms" className="hover:text-primary-foreground transition-colors">
