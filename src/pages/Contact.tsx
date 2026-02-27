@@ -605,65 +605,6 @@ export default function Contact() {
                     )}
                   </div>
 
-                  {/* 🎯 NEW: Marketing Consent Checkboxes - TCPA Compliant */}
-                  <div className="space-y-4 border-t border-border pt-6">
-                    <Label className="text-base font-semibold">
-                      Marketing Communications (Optional)
-                    </Label>
-
-                    {/* Email Marketing Consent */}
-                    <div className="flex items-start space-x-3">
-                      <Checkbox
-                        id="emailConsent"
-                        checked={formData.emailConsent || false}
-                        onCheckedChange={(checked) =>
-                          setFormData({ ...formData, emailConsent: checked === true })
-                        }
-                      />
-                      <div className="grid gap-1.5 leading-none">
-                        <label
-                          htmlFor="emailConsent"
-                          className="text-sm font-medium leading-relaxed cursor-pointer peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        >
-                          Yes, I would like to receive email updates, newsletters, and promotional
-                          communications from A1 Engineering about services and industry insights.
-                        </label>
-                        <p className="text-xs text-muted-foreground">
-                          You can unsubscribe at any time.
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* SMS Marketing Consent - TCPA COMPLIANT */}
-                    <div className="flex items-start space-x-3">
-                      <Checkbox
-                        id="smsConsent"
-                        checked={formData.smsConsent || false}
-                        onCheckedChange={(checked) =>
-                          setFormData({ ...formData, smsConsent: checked === true })
-                        }
-                      />
-                      <div className="grid gap-1.5 leading-none">
-                        <label
-                          htmlFor="smsConsent"
-                          className="text-sm font-medium leading-relaxed cursor-pointer peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        >
-                          By checking this box, I consent to receive marketing and informational text
-                          messages from A1 Engineering at the phone number provided, including messages
-                          sent by autodialer.
-                        </label>
-                        <p className="text-xs text-muted-foreground">
-                          Consent is not a condition of purchase or receiving a quote. Message frequency
-                          varies. Message & data rates may apply. Reply STOP to opt out or HELP for help.
-                          View our{' '}
-                          <Link to="/privacy-policy" className="text-primary hover:underline">
-                            Privacy Policy
-                          </Link>.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
                   {/* NEW: General Submission Disclaimer */}
                   <div className="bg-muted/50 rounded-lg p-4">
                     <p className="text-xs text-muted-foreground">
