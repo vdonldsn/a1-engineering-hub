@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";  // 🎯 NEW: Added Link import
 import { Layout } from "@/components/layout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -30,6 +31,9 @@ import {
 
 const WEBHOOK_URL =
   "https://hook.us2.make.com/9y3z84y3i7e3lpncfc4vql28oq37ji94";
+
+const APPS_SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycbwraJqaaJ0YzmsxXmZtxUoMoGGT0aS4ecUUEXhguc_6i1YYuvFqg9e6u1-4Ogd8v-YZPA/exec";
 
 const MAX_FILES = 5;
 const MAX_FILE_SIZE_MB = 15;
@@ -124,6 +128,8 @@ export default function Contact() {
     urgency: "",
     heardFrom: "",
     heardFromOther: "",
+    emailConsent: false,    // 🎯 NEW: Email marketing consent
+    smsConsent: false,      // 🎯 NEW: SMS marketing consent (TCPA)
   });
 
   const [files, setFiles] = useState<File[]>([]);
@@ -198,6 +204,8 @@ export default function Contact() {
       urgency: "",
       heardFrom: "",
       heardFromOther: "",
+      emailConsent: false,    // 🎯 NEW
+      smsConsent: false,      // 🎯 NEW
     });
     setFiles([]);
     setFileErrors([]);
@@ -234,6 +242,59 @@ export default function Contact() {
       const resolvedHeardFrom =
         formData.heardFrom === "Other" ? formData.heardFromOther.trim() : formData.heardFrom;
 
+      // ── Step 1: Upload each file to Drive via Apps Script ──────────
+      // Apps Script expects one file at a time as JSON with base64 encoded data
+      // It returns { success: true, url: "https://drive.google.com/..." }
+      let driveLinks = "";
+      let fileNames = "";
+
+      if (files.length > 0) {
+        const uploadedUrls: string[] = [];
+
+        for (const file of files) {
+          // Convert file to base64 — Apps Script requires this format
+          const base64 = await new Promise<string>((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onload = () => {
+              // FileReader result is "data:mimetype;base64,XXXXX" — strip the prefix
+              const result = reader.result as string;
+              resolve(result.split(",")[1]);
+            };
+            reader.onerror = () => reject(new Error(`Failed to read file: ${file.name}`));
+            reader.readAsDataURL(file);
+          });
+
+          const uploadRes = await fetch(APPS_SCRIPT_URL, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              fileName: file.name,
+              fileData: base64,
+              mimeType: file.type || "application/octet-stream",
+            }),
+          });
+
+          if (!uploadRes.ok) {
+            throw new Error(`Failed to upload ${file.name}`);
+          }
+
+          const uploadData = await uploadRes.json();
+
+          if (!uploadData.success) {
+            throw new Error(`Apps Script error for ${file.name}: ${uploadData.error}`);
+          }
+
+          uploadedUrls.push(uploadData.url);
+        }
+
+        // Comma-separated — lands cleanly in a single Google Sheet cell
+        driveLinks = uploadedUrls.join(", ");
+        fileNames = files.map((f) => f.name).join(", ");
+      }
+
+      // ── Step 2: Send full payload to Make ─────────────────────────
+      // Format: multipart/form-data — Make reads each field by name
+      // fileNames and driveLinks will be empty strings if no files uploaded
       const payload = new FormData();
 
       // Text fields
@@ -256,8 +317,9 @@ export default function Contact() {
       payload.append("createdAt", new Date().toISOString());
       payload.append("sourceUrl", window.location.href);
 
-      // Files
-      files.forEach((file) => payload.append("files", file));
+      // Drive data — populated from Apps Script responses above
+      payload.append("fileNames", fileNames);
+      payload.append("driveLinks", driveLinks);
 
       const response = await fetch(WEBHOOK_URL, {
         method: "POST",
@@ -541,6 +603,18 @@ export default function Contact() {
                         ))}
                       </ul>
                     )}
+                  </div>
+
+                  {/* NEW: General Submission Disclaimer */}
+                  <div className="bg-muted/50 rounded-lg p-4">
+                    <p className="text-xs text-muted-foreground">
+                      By submitting this form, you agree to our{' '}
+                      <Link to="/privacy-policy" className="text-primary hover:underline font-medium">
+                        Privacy Policy
+                      </Link>{' '}
+                      and acknowledge that A1 Engineering will use the information you provide
+                      to respond to your inquiry and provide engineering services.
+                    </p>
                   </div>
 
                   {/* Submit */}
