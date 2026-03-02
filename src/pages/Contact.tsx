@@ -32,8 +32,7 @@ import {
 const WEBHOOK_URL =
   "https://hook.us2.make.com/9y3z84y3i7e3lpncfc4vql28oq37ji94";
 
-const APPS_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbwraJqaaJ0YzmsxXmZtxUoMoGGT0aS4ecUUEXhguc_6i1YYuvFqg9e6u1-4Ogd8v-YZPA/exec";
+const APPS_SCRIPT_URL = "/api/upload";
 
 const MAX_FILES = 5;
 const MAX_FILE_SIZE_MB = 15;
