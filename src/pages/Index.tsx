@@ -15,6 +15,9 @@ import {
   Zap,
   ClipboardList,
   MapPin,
+  BookOpen,
+  Clock,
+  ChevronRight,
 } from "lucide-react";
 
 const processSteps = [
@@ -283,6 +286,55 @@ export default function Index() {
               </Link>
             </Button>
           </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-background">
+        <div className="section-container">
+          <div className="flex items-end justify-between mb-10">
+            <div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-4">
+                <BookOpen className="h-4 w-4" />
+                Engineering Insights
+              </div>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
+                Latest from the Blog
+              </h2>
+            </div>
+            <Link
+              to="/insights"
+              className="hidden md:inline-flex items-center gap-1 text-primary text-sm font-semibold hover:gap-2 transition-all"
+            >
+              View All Posts <ChevronRight className="h-4 w-4" />
+            </Link>
+          </div>
+
+          <Link to="/insights" className="group block glass-card rounded-2xl overflow-hidden hover-lift border border-border/50">
+            <div className="p-8 md:p-10 bg-gradient-to-br from-blueprint via-background to-steel/20 blueprint-pattern">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold mb-4">
+                <BadgeCheck className="h-3.5 w-3.5" />
+                Permitting & Land Development
+              </div>
+              <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors leading-snug">
+                Why Your Project Stalls{" "}
+                <span className="text-gradient">at Permitting</span>
+              </h3>
+              <p className="text-muted-foreground text-base leading-relaxed max-w-2xl mb-6">
+                Most construction delays don't happen on the job site — they happen in the submittal queue.
+                A licensed PE breaks down the five root causes and how a full-service engineering partner
+                eliminates them before they cost you money.
+              </p>
+              <div className="flex items-center gap-4 flex-wrap">
+                <span className="inline-flex items-center gap-1.5 text-xs text-muted-foreground bg-secondary px-3 py-1.5 rounded-full font-medium">
+                  <Clock className="h-3.5 w-3.5" /> 9 min read
+                </span>
+                <span className="text-xs text-muted-foreground">March 2026</span>
+                <span className="inline-flex items-center text-primary text-sm font-semibold group-hover:gap-2 transition-all ml-auto">
+                  Read Article <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </span>
+              </div>
+            </div>
+          </Link>
         </div>
       </section>
 
