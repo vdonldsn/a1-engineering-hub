@@ -104,11 +104,11 @@ export function Header() {
         {/* Mobile Menu - UPDATED PHONE NUMBER */}
         <div
           className={cn(
-            "md:hidden overflow-hidden transition-all duration-300 ease-in-out",
+            "md:hidden overflow-hidden transition-all duration-300 ease-in-out bg-white/95 backdrop-blur-md",
             isMobileMenuOpen ? "max-h-96 pb-6" : "max-h-0"
           )}
         >
-          <div className="flex flex-col gap-4 pt-4 border-t border-border">
+          <div className="flex flex-col gap-4 pt-4 border-t border-border px-4">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
