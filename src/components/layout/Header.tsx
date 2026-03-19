@@ -104,7 +104,7 @@ export function Header() {
         {/* Mobile Menu - UPDATED PHONE NUMBER */}
         <div
           className={cn(
-            "md:hidden overflow-hidden transition-all duration-300 ease-in-out bg-white/95 backdrop-blur-md",
+            "md:hidden overflow-hidden transition-all duration-300 ease-in-out bg-white/95 backdrop-blur-md shadow-lg",
             isMobileMenuOpen ? "max-h-96 pb-6" : "max-h-0"
           )}
         >
