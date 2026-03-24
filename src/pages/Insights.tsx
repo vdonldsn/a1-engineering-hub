@@ -64,10 +64,116 @@ interface PostSection {
 // article. A full post-list/index page can be built from this array too.
 // =============================================================================
 const posts = [
+  // ── POST 2 (current featured) ─────────────────────────────────────────────
+  {
+    slug: "do-you-need-an-engineer-to-remove-a-load-bearing-wall",
+    title: "Do You Need an Engineer to Remove a Load-Bearing Wall?",
+    titleAccent: "a Load-Bearing Wall?",
+    deck: "Most homeowners and contractors assume any wall can come down with a permit and a good contractor. Here's what actually happens structurally when you remove a load-bearing wall — and why a PE stamp is the difference between a clean inspection and a costly failure.",
+    category: "Engineering & Structural",
+    readTime: "3 min read",
+    date: "March 2026",
+    states: ["TX", "TN", "AZ", "FL"],
+    sections: [
+      {
+        type: "lead",
+        content:
+          "You want to open up the floor plan — knock out a wall between the kitchen and living room, or remove that dividing wall to create a larger primary suite. The contractor says it's straightforward. The permit office wants engineering. Who's right?",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Both, actually. The work itself may be straightforward for an experienced crew — but only if someone with a PE license has already determined what that wall is carrying and engineered the beam that replaces it. Skip that step and you're not just risking a failed inspection. You're risking a structural failure that shows up months or years later.",
+      },
+      {
+        type: "h2",
+        content: "What a Load-Bearing Wall Is Actually Doing",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Load-bearing walls transfer weight from the roof and upper floors down through the structure to the foundation. When you remove one without a proper replacement beam, that load doesn't disappear — it redistributes, often unevenly, into adjacent framing that wasn't designed to carry it. The result is deflection, cracking, stuck doors and windows, and in serious cases, structural movement that's expensive to reverse.",
+      },
+      {
+        type: "pullquote",
+        content:
+          "The beam size isn't a guess. It's a calculation based on span, load, lumber species, and what's sitting above. That calculation requires a licensed structural PE.",
+      },
+      {
+        type: "h2",
+        content: "What the Engineering Actually Covers",
+      },
+      {
+        type: "callout-info",
+        label: "What a Structural PE Assessment Includes",
+        items: [
+          {
+            bold: "Load path analysis.",
+            text: " Tracing exactly what weight the wall carries — roof load, floor load, point loads from above — and confirming where it needs to go after removal.",
+          },
+          {
+            bold: "Beam sizing calculation.",
+            text: " Determining the correct header or flush beam size, material (LVL, steel, dimensional lumber), and connection requirements based on the actual span and load.",
+          },
+          {
+            bold: "Post and foundation check.",
+            text: " The beam has to land somewhere. A PE confirms the posts and footings at the beam ends can handle the concentrated load — a common oversight in DIY plans.",
+          },
+          {
+            bold: "PE-stamped drawings.",
+            text: " The document your permit office, inspector, and contractor all need to proceed. Without it, most jurisdictions won't issue a structural permit for wall removal.",
+          },
+        ],
+      },
+      {
+        type: "callout-warning",
+        label: "Don't rely on online beam calculators",
+        content:
+          "Online span tables and beam calculators can give ballpark numbers, but they don't account for your specific load path, existing framing conditions, or local code amendments. A beam that's undersized by even one size can deflect visibly under load — and that's after the drywall is back up.",
+      },
+      {
+        type: "h2",
+        content: "When You Definitely Need a PE",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Any wall removal that requires a structural permit — which in TX, TN, AZ, and FL is most of them — requires PE-stamped drawings to pull that permit. Beyond the permit requirement, you should always bring in a licensed structural engineer if: the wall runs parallel to your floor joists and you're not sure whether it's bearing, if there's a wall directly above the one you're removing, if the span exceeds 10 feet, or if the home is older and the original framing isn't documented.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "At A1 Engineering, our residential engineering inspections and structural assessments cover exactly this scope — confirming whether a wall is load-bearing, sizing the replacement beam, and producing the PE-stamped drawings your contractor and permit office need to move forward cleanly.",
+      },
+      { type: "rule" },
+      {
+        type: "paragraph",
+        content:
+          "If you're planning a wall removal and need a structural assessment or PE-stamped drawings, upload your floor plan and project details and we'll get back to you within 24 hours.",
+      },
+      {
+        type: "tags",
+        items: [
+          { text: "Structural Engineering" },
+          { text: "Load-Bearing Walls" },
+          { text: "Residential Engineering" },
+          { text: "PE Stamped Plans" },
+          { text: "Building Permits" },
+          { text: "Beam Design" },
+          { text: "Texas" },
+          { text: "Tennessee" },
+          { text: "Arizona" },
+          { text: "Florida" },
+        ],
+      },
+      { type: "cta" },
+    ] as PostSection[],
+  },
+  // ── POST 1 (archive) ──────────────────────────────────────────────────────
   {
     slug: "why-projects-stall-at-permitting",
     title: "Why Your Project Stalls at Permitting",
-    titleAccent: "at Permitting", // the part rendered in brand color
+    titleAccent: "at Permitting",
     deck: "Most construction delays don't happen on the job site — they happen in the submittal queue. A licensed PE breaks down the five root causes and how a full-service engineering partner eliminates them before they cost you money.",
     category: "Permitting & Land Development",
     readTime: "9 min read",

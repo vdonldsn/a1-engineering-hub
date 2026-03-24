@@ -289,8 +289,11 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Insights Teaser Section */}
       <section className="py-20 bg-background">
         <div className="section-container">
+
+          {/* Section header */}
           <div className="flex items-end justify-between mb-10">
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-4">
@@ -309,32 +312,100 @@ export default function Index() {
             </Link>
           </div>
 
-          <Link to="/insights" className="group block glass-card rounded-2xl overflow-hidden hover-lift border border-border/50">
-            <div className="p-8 md:p-10 bg-gradient-to-br from-blueprint via-background to-steel/20 blueprint-pattern">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold mb-4">
-                <BadgeCheck className="h-3.5 w-3.5" />
-                Permitting & Land Development
+          {/* Featured + Secondary card grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+            {/* ── FEATURED CARD (spans 2 of 3 columns) ── */}
+            <Link
+              to="/insights"
+              className="group lg:col-span-2 block glass-card rounded-2xl overflow-hidden hover-lift border border-border/50"
+            >
+              <div className="h-full p-8 md:p-10 bg-gradient-to-br from-blueprint via-background to-steel/20 blueprint-pattern flex flex-col">
+                {/* Label row */}
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold">
+                    <BadgeCheck className="h-3.5 w-3.5" />
+                    Engineering &amp; Structural
+                  </div>
+                  <span className="text-xs font-semibold text-primary bg-primary/10 border border-primary/20 px-2.5 py-1 rounded-full">
+                    Latest
+                  </span>
+                </div>
+
+                {/* Title */}
+                <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors leading-snug">
+                  Do You Need an Engineer to Remove{" "}
+                  <span className="text-gradient">a Load-Bearing Wall?</span>
+                </h3>
+
+                {/* Deck */}
+                <p className="text-muted-foreground text-base leading-relaxed mb-6 flex-1">
+                  Most homeowners and contractors assume any wall can come down with a permit and a good contractor. Here's what actually happens structurally — and why a PE stamp is the difference between a clean inspection and a costly failure.
+                </p>
+
+                {/* Meta footer */}
+                <div className="flex items-center gap-4 flex-wrap pt-4 border-t border-border/50">
+                  <span className="inline-flex items-center gap-1.5 text-xs text-muted-foreground bg-secondary px-3 py-1.5 rounded-full font-medium">
+                    <Clock className="h-3.5 w-3.5" /> 3 min read
+                  </span>
+                  <span className="text-xs text-muted-foreground">March 2026</span>
+                  <span className="inline-flex items-center text-primary text-sm font-semibold group-hover:gap-2 transition-all ml-auto">
+                    Read Article <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </div>
               </div>
-              <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors leading-snug">
-                Why Your Project Stalls{" "}
-                <span className="text-gradient">at Permitting</span>
-              </h3>
-              <p className="text-muted-foreground text-base leading-relaxed max-w-2xl mb-6">
-                Most construction delays don't happen on the job site — they happen in the submittal queue.
-                A licensed PE breaks down the five root causes and how a full-service engineering partner
-                eliminates them before they cost you money.
-              </p>
-              <div className="flex items-center gap-4 flex-wrap">
-                <span className="inline-flex items-center gap-1.5 text-xs text-muted-foreground bg-secondary px-3 py-1.5 rounded-full font-medium">
-                  <Clock className="h-3.5 w-3.5" /> 9 min read
-                </span>
-                <span className="text-xs text-muted-foreground">March 2026</span>
-                <span className="inline-flex items-center text-primary text-sm font-semibold group-hover:gap-2 transition-all ml-auto">
-                  Read Article <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </span>
+            </Link>
+
+            {/* ── SECONDARY CARD (spans 1 of 3 columns) ── */}
+            <Link
+              to="/insights"
+              className="group block glass-card rounded-2xl overflow-hidden hover-lift border border-border/50"
+            >
+              <div className="h-full p-6 flex flex-col">
+                {/* Top accent bar */}
+                <div className="w-full h-1 rounded-full bg-gradient-to-r from-primary/40 to-primary/10 mb-6" />
+
+                {/* Label */}
+                <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold mb-4 self-start">
+                  <BadgeCheck className="h-3.5 w-3.5" />
+                  Permitting
+                </div>
+
+                {/* Title */}
+                <h3 className="font-heading text-lg font-bold text-foreground mb-3 group-hover:text-primary transition-colors leading-snug flex-1">
+                  Why Your Project Stalls{" "}
+                  <span className="text-gradient">at Permitting</span>
+                </h3>
+
+                {/* Short excerpt */}
+                <p className="text-muted-foreground text-sm leading-relaxed mb-5">
+                  Permit delays rarely come from bad luck. They come from missing stamps, mismatched plans, and coordination gaps a PE-led team catches before submittal.
+                </p>
+
+                {/* Meta footer */}
+                <div className="flex items-center gap-3 flex-wrap pt-4 border-t border-border/50 mt-auto">
+                  <span className="inline-flex items-center gap-1.5 text-xs text-muted-foreground bg-secondary px-3 py-1.5 rounded-full font-medium">
+                    <Clock className="h-3.5 w-3.5" /> 3 min read
+                  </span>
+                  <span className="inline-flex items-center text-primary text-xs font-semibold group-hover:gap-1.5 transition-all ml-auto">
+                    Read <ArrowRight className="ml-0.5 h-3.5 w-3.5 group-hover:translate-x-0.5 transition-transform" />
+                  </span>
+                </div>
               </div>
-            </div>
-          </Link>
+            </Link>
+
+          </div>
+
+          {/* Mobile "View All" link — hidden on md+ where it shows in header */}
+          <div className="mt-8 text-center md:hidden">
+            <Link
+              to="/insights"
+              className="inline-flex items-center gap-1 text-primary text-sm font-semibold"
+            >
+              View All Posts <ChevronRight className="h-4 w-4" />
+            </Link>
+          </div>
+
         </div>
       </section>
 
