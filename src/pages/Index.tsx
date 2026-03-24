@@ -410,7 +410,10 @@ export default function Index() {
         </div>
       </section>
 
-      {/* CTA Section - UPDATED "Meet Our Team" button with blue background */}
+      {/* Social Media Bar */}
+      <SocialBar />
+
+      {/* CTA Section */}
       <section className="py-24 gradient-metallic relative overflow-hidden">
         {/* Decorative */}
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDBoNDB2NDBIMHoiLz48cGF0aCBkPSJNMCAwaDFMNDEgNDB2LTFMMCAweiIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDUpIi8+PC9nPjwvc3ZnPg==')] opacity-50" />
