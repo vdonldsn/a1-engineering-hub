@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout";
+import SocialBar from "@/components/SocialBar";
 import { Button } from "@/components/ui/button";
 import {
   Search,
