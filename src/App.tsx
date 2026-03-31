@@ -10,7 +10,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from '@/pages/PrivacyPolicy';
-import Insights from "@/pages/Insights";
+import InsightsIndex from "@/pages/InsightsIndex";
+import InsightPost   from "@/pages/InsightPost";
 
 const queryClient = new QueryClient();
 
@@ -26,7 +27,8 @@ const App = () => (
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/insights" element={<Insights />} />
+          <Route path="/insights" element={<InsightsIndex />} />
+          <Route path="/insights/:slug" element={<InsightPost />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
