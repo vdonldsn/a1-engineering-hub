@@ -107,7 +107,7 @@ export default function Index() {
         {/* Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-blueprint via-background to-steel/20 blueprint-pattern" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
-        
+
         {/* Decorative Elements */}
         <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 left-0 w-80 h-80 bg-accent/10 rounded-full blur-3xl" />
@@ -219,17 +219,17 @@ export default function Index() {
                 {index < processSteps.length - 1 && (
                   <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-primary to-transparent" />
                 )}
-                
+
                 {/* Step Number */}
                 <div className="text-5xl font-heading font-bold text-primary/20 mb-4 group-hover:text-primary/30 transition-colors">
                   {step.number}
                 </div>
-                
+
                 {/* Icon */}
                 <div className="w-12 h-12 rounded-lg gradient-metallic flex items-center justify-center mb-4">
                   <step.icon className="h-6 w-6 text-primary-foreground" />
                 </div>
-                
+
                 {/* Content */}
                 <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
                   {step.title}
@@ -313,16 +313,15 @@ export default function Index() {
             </Link>
           </div>
 
-          {/* Featured + Secondary card grid */}
+          {/* Featured + Secondary grid */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
-            {/* ── FEATURED CARD (spans 2 of 3 columns) ── */}
+            {/* ── FEATURED (2 cols) — newest post ── */}
             <Link
-              to="/insights"
+              to="/insights/foundation-letters-explained-what-lenders-and-cities-require"
               className="group lg:col-span-2 block glass-card rounded-2xl overflow-hidden hover-lift border border-border/50"
             >
               <div className="h-full p-8 md:p-10 bg-gradient-to-br from-blueprint via-background to-steel/20 blueprint-pattern flex flex-col">
-                {/* Label row */}
                 <div className="flex items-center gap-3 mb-5">
                   <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold">
                     <BadgeCheck className="h-3.5 w-3.5" />
@@ -332,24 +331,18 @@ export default function Index() {
                     Latest
                   </span>
                 </div>
-
-                {/* Title */}
                 <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors leading-snug">
-                  Do You Need an Engineer to Remove{" "}
-                  <span className="text-gradient">a Load-Bearing Wall?</span>
+                  Foundation Letters Explained:{" "}
+                  <span className="text-gradient">What Lenders and Cities Actually Require</span>
                 </h3>
-
-                {/* Deck */}
                 <p className="text-muted-foreground text-base leading-relaxed mb-6 flex-1">
-                  Most homeowners and contractors assume any wall can come down with a permit and a good contractor. Here's what actually happens structurally — and why a PE stamp is the difference between a clean inspection and a costly failure.
+                  You're closing on a loan or pulling a permit and someone asks for a "foundation letter from a licensed engineer." What does that mean, who has to write it, and what happens if you skip it?
                 </p>
-
-                {/* Meta footer */}
                 <div className="flex items-center gap-4 flex-wrap pt-4 border-t border-border/50">
                   <span className="inline-flex items-center gap-1.5 text-xs text-muted-foreground bg-secondary px-3 py-1.5 rounded-full font-medium">
-                    <Clock className="h-3.5 w-3.5" /> 3 min read
+                    <Clock className="h-3.5 w-3.5" /> 5 min read
                   </span>
-                  <span className="text-xs text-muted-foreground">March 2026</span>
+                  <span className="text-xs text-muted-foreground">April 2026</span>
                   <span className="inline-flex items-center text-primary text-sm font-semibold group-hover:gap-2 transition-all ml-auto">
                     Read Article <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </span>
@@ -357,33 +350,24 @@ export default function Index() {
               </div>
             </Link>
 
-            {/* ── SECONDARY CARD (spans 1 of 3 columns) ── */}
+            {/* ── SECONDARY (1 col) — previous post ── */}
             <Link
-              to="/insights"
+              to="/insights/do-you-need-an-engineer-to-remove-a-load-bearing-wall"
               className="group block glass-card rounded-2xl overflow-hidden hover-lift border border-border/50"
             >
               <div className="h-full p-6 flex flex-col">
-                {/* Top accent bar */}
                 <div className="w-full h-1 rounded-full bg-gradient-to-r from-primary/40 to-primary/10 mb-6" />
-
-                {/* Label */}
                 <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold mb-4 self-start">
                   <BadgeCheck className="h-3.5 w-3.5" />
-                  Permitting
+                  Engineering &amp; Structural
                 </div>
-
-                {/* Title */}
                 <h3 className="font-heading text-lg font-bold text-foreground mb-3 group-hover:text-primary transition-colors leading-snug flex-1">
-                  Why Your Project Stalls{" "}
-                  <span className="text-gradient">at Permitting</span>
+                  Do You Need an Engineer to Remove{" "}
+                  <span className="text-gradient">a Load-Bearing Wall?</span>
                 </h3>
-
-                {/* Short excerpt */}
                 <p className="text-muted-foreground text-sm leading-relaxed mb-5">
-                  Permit delays rarely come from bad luck. They come from missing stamps, mismatched plans, and coordination gaps a PE-led team catches before submittal.
+                  The contractor says it's straightforward. The permit office wants engineering. Here's what actually happens structurally — and why the PE stamp matters.
                 </p>
-
-                {/* Meta footer */}
                 <div className="flex items-center gap-3 flex-wrap pt-4 border-t border-border/50 mt-auto">
                   <span className="inline-flex items-center gap-1.5 text-xs text-muted-foreground bg-secondary px-3 py-1.5 rounded-full font-medium">
                     <Clock className="h-3.5 w-3.5" /> 3 min read
@@ -397,12 +381,9 @@ export default function Index() {
 
           </div>
 
-          {/* Mobile "View All" link — hidden on md+ where it shows in header */}
+          {/* Mobile "View All" — hidden on md+ */}
           <div className="mt-8 text-center md:hidden">
-            <Link
-              to="/insights"
-              className="inline-flex items-center gap-1 text-primary text-sm font-semibold"
-            >
+            <Link to="/insights" className="inline-flex items-center gap-1 text-primary text-sm font-semibold">
               View All Posts <ChevronRight className="h-4 w-4" />
             </Link>
           </div>
@@ -411,9 +392,9 @@ export default function Index() {
       </section>
 
       {/* Social Media Bar */}
-      <SocialBar />
+            <SocialBar />
 
-      {/* CTA Section */}
+      {/* CTA Section - UPDATED "Meet Our Team" button with blue background */}
       <section className="py-24 gradient-metallic relative overflow-hidden">
         {/* Decorative */}
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDBoNDB2NDBIMHoiLz48cGF0aCBkPSJNMCAwaDFMNDEgNDB2LTFMMCAweiIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDUpIi8+PC9nPjwvc3ZnPg==')] opacity-50" />
