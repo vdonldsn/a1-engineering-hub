@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout";
 import SocialBar from "@/components/SocialBar";
 import { Button } from "@/components/ui/button";
+import processAnalysis from "@/assets/process-analysis.jpg";
+import processDrafting from "@/assets/process-drafting.jpg";
+import processEngineering from "@/assets/process-engineering.jpg";
+import processApproval from "@/assets/process-approval.jpg";
 import {
   Search,
   PenTool,
