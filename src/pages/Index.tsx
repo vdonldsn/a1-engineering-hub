@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout";
 import SocialBar from "@/components/SocialBar";
 import { Button } from "@/components/ui/button";
+import processAnalysis from "@/assets/process-analysis.jpg";
+import processDrafting from "@/assets/process-drafting.jpg";
+import processEngineering from "@/assets/process-engineering.jpg";
+import processApproval from "@/assets/process-approval.jpg";
 import {
   Search,
   PenTool,
@@ -27,24 +31,28 @@ const processSteps = [
     title: "Analysis & Survey",
     description: "GeoTechnical soil survey and comprehensive site analysis to understand your project's foundation requirements.",
     icon: Search,
+    image: processAnalysis,
   },
   {
     number: "02",
     title: "Drafting & Design",
     description: "Professional architectural drawings, detailed site plans, and precise floor plans crafted to your specifications.",
     icon: PenTool,
+    image: processDrafting,
   },
   {
     number: "03",
     title: "Engineering & Compliance",
     description: "Electrical load calculations, green/energy code sign-off, and engineered foundation design by licensed PEs.",
     icon: Calculator,
+    image: processEngineering,
   },
   {
     number: "04",
     title: "Approval & Permits",
     description: "Electronic uploading, building permits, and Certificate of Occupancy—we handle the entire approval process.",
     icon: FileCheck,
+    image: processApproval,
   },
 ];
 
@@ -213,30 +221,44 @@ export default function Index() {
             {processSteps.map((step, index) => (
               <div
                 key={step.number}
-                className="relative glass-card rounded-2xl p-6 hover-lift group"
+                className="relative rounded-2xl overflow-hidden hover-lift group min-h-[320px]"
               >
+                {/* Background Image */}
+                <img
+                  src={step.image}
+                  alt={step.title}
+                  loading="lazy"
+                  width={640}
+                  height={512}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                {/* Dark Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/60 to-foreground/30" />
+
                 {/* Connection Line (hidden on last item) */}
                 {index < processSteps.length - 1 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-primary to-transparent" />
+                  <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-primary to-transparent z-20" />
                 )}
 
-                {/* Step Number */}
-                <div className="text-5xl font-heading font-bold text-primary/20 mb-4 group-hover:text-primary/30 transition-colors">
-                  {step.number}
-                </div>
-
-                {/* Icon */}
-                <div className="w-12 h-12 rounded-lg gradient-metallic flex items-center justify-center mb-4">
-                  <step.icon className="h-6 w-6 text-primary-foreground" />
-                </div>
-
                 {/* Content */}
-                <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
-                  {step.title}
-                </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {step.description}
-                </p>
+                <div className="relative z-10 p-6 h-full flex flex-col justify-end">
+                  {/* Step Number */}
+                  <div className="text-5xl font-heading font-bold text-primary/40 mb-3">
+                    {step.number}
+                  </div>
+
+                  {/* Icon */}
+                  <div className="w-10 h-10 rounded-lg bg-primary/20 backdrop-blur-sm flex items-center justify-center mb-3 border border-primary/30">
+                    <step.icon className="h-5 w-5 text-primary" />
+                  </div>
+
+                  <h3 className="font-heading text-xl font-semibold text-primary-foreground mb-2">
+                    {step.title}
+                  </h3>
+                  <p className="text-primary-foreground/80 text-sm leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
