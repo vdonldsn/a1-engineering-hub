@@ -31,24 +31,28 @@ const processSteps = [
     title: "Analysis & Survey",
     description: "GeoTechnical soil survey and comprehensive site analysis to understand your project's foundation requirements.",
     icon: Search,
+    image: processAnalysis,
   },
   {
     number: "02",
     title: "Drafting & Design",
     description: "Professional architectural drawings, detailed site plans, and precise floor plans crafted to your specifications.",
     icon: PenTool,
+    image: processDrafting,
   },
   {
     number: "03",
     title: "Engineering & Compliance",
     description: "Electrical load calculations, green/energy code sign-off, and engineered foundation design by licensed PEs.",
     icon: Calculator,
+    image: processEngineering,
   },
   {
     number: "04",
     title: "Approval & Permits",
     description: "Electronic uploading, building permits, and Certificate of Occupancy—we handle the entire approval process.",
     icon: FileCheck,
+    image: processApproval,
   },
 ];
 
