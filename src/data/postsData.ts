@@ -47,6 +47,198 @@ export interface Post {
 }
 
 export const posts: Post[] = [
+  // ── POST 4 — newest first ─────────────────────────────────────────────────
+  {
+    slug: "electrical-load-calculations-why-panels-fail-inspection",
+    title: "Electrical Load Calculations: Why Panels Fail Inspection",
+    titleAccent: "Why Panels Fail Inspection",
+    deck: "A failed electrical inspection doesn't always mean bad wiring. More often it means the panel was sized without a proper load calculation — and no one caught it until the inspector did. Here's what PE electrical engineers actually check, and why it matters before you build.",
+    category: "PE Electrical Engineering",
+    readTime: "6 min read",
+    date: "April 2026",
+    states: ["TX", "TN", "AZ", "FL"],
+    sections: [
+      {
+        type: "lead",
+        content:
+          "The electrician pulls the permit, installs the panel, and calls for inspection. The inspector shows up, reviews the load calculation — and fails it. Not because anything was wired wrong. Because the panel is undersized for what the building actually demands, and nobody ran the math before the work started.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "This scenario plays out constantly across residential and commercial construction in Texas, Tennessee, Arizona, and Florida. The electrical work itself is fine. The panel schedule looks reasonable. But without a proper load calculation stamped by a licensed PE Electrical Engineer, the inspector has no verified basis for approving the service size — and in an increasing number of jurisdictions, that's grounds for a failed inspection regardless of what's physically installed.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Understanding why panels fail inspection starts with understanding what a load calculation actually is, what it covers, and why the number on the breaker panel isn't the whole story.",
+      },
+      {
+        type: "h2",
+        content: "What an Electrical Load Calculation Actually Is",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A load calculation is a formal engineering analysis — governed by NEC Article 220 — that determines the total electrical demand a building places on its service. It accounts for every load in the building: lighting, receptacles, HVAC equipment, appliances, water heaters, EV chargers, solar inverters, generators, and any special equipment. The result tells you the minimum service amperage the building requires to operate safely and code-compliantly.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The NEC provides two primary methods: the Standard Method, which calculates each load individually at full demand, and the Optional Method, which applies demand factors that recognize not every load runs simultaneously at full power. Both are legitimate. Neither is a guess, and neither can be skipped. The method used affects the outcome significantly — and choosing the wrong one, or applying demand factors incorrectly, produces a calculation that looks reasonable but doesn't satisfy code.",
+      },
+      {
+        type: "pullquote",
+        content:
+          "The panel size is the conclusion of an engineering calculation — not the starting point. When you size the panel first and calculate second, you're almost always working backwards.",
+      },
+      {
+        type: "h2",
+        content: "The Four Reasons Panels Fail Inspection",
+      },
+      {
+        type: "h3",
+        stepNum: "1",
+        content: "No Calculation on File",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Many jurisdictions — particularly across Texas and Tennessee — now require a PE-stamped load calculation as part of the permit submittal for new construction and additions. If the permit was pulled without one, or if the calculation was done informally and never documented, the inspector arrives with no verified basis for the service size. The panel may be perfectly adequate, but without documentation proving it, the inspection fails.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "This is increasingly common on projects where the electrical contractor sized the panel based on experience and past projects rather than running the formal NEC calculation. Experience is valuable, but it isn't a PE stamp — and inspectors in most TX, TN, AZ, and FL jurisdictions know the difference.",
+      },
+      {
+        type: "h3",
+        stepNum: "2",
+        content: "The Panel Is Genuinely Undersized",
+      },
+      {
+        type: "paragraph",
+        content:
+          "When the calculation is run correctly and the panel still fails, it's usually because the building's actual demand exceeds what was planned for. The most common culprits are EV charging stations, added HVAC equipment, electric water heaters replacing gas, or solar PV systems with battery backup — all of which add significant load that wasn't in the original design. Each of these changes the load calculation meaningfully, and each requires a PE to recalculate service requirements before the upgrade is permitted.",
+      },
+      {
+        type: "callout-warning",
+        label: "Adding an EV charger or solar system? Read this first",
+        content:
+          "A Level 2 EV charger adds 40–50 amps of continuous load to your electrical service. A solar PV system with battery storage affects both import and export calculations. Either one can push a 200-amp residential service into undersized territory — and both require a PE load calculation update before the permit for the addition can be issued in most TX, TN, AZ, and FL jurisdictions.",
+      },
+      {
+        type: "h3",
+        stepNum: "3",
+        content: "Panel Schedule Doesn't Match the Drawings",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Even when the load calculation is correct, a common inspection failure is a panel schedule that doesn't reconcile with the architectural or mechanical drawings. If the drawings show a 5-ton HVAC unit but the panel schedule lists the circuit breaker sized for a 3-ton unit, the inspector flags it as a discrepancy. The solution isn't rewiring — it's producing coordinated documents where the electrical design matches what's actually being built.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "This coordination problem is almost always the result of electrical plans being produced in isolation from the architectural and mechanical set. A PE Electrical Engineer working from the full drawing set — not just the electrical scope — catches these mismatches before submittal instead of at inspection.",
+      },
+      {
+        type: "h3",
+        stepNum: "4",
+        content: "Demand Factors Applied Incorrectly",
+      },
+      {
+        type: "paragraph",
+        content:
+          "NEC demand factors allow engineers to reduce the calculated load for certain systems based on the statistical likelihood that not all loads operate simultaneously. Applied correctly, they let a building use a smaller service panel than the sum of all connected loads would suggest. Applied incorrectly — or applied to load types that don't qualify — they produce a calculation that appears to justify an undersized service but doesn't actually satisfy the code.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "This is one of the most common errors in calculations produced by non-engineers. The math works. The formatting looks professional. But the demand factors are misapplied, and a knowledgeable inspector — or a utility engineer during interconnection review — will catch it.",
+      },
+      {
+        type: "callout-info",
+        label: "What a PE-Stamped Load Calculation Covers",
+        items: [
+          {
+            bold: "General lighting and receptacle loads.",
+            text: " Calculated per square footage using NEC Article 220 unit load values, applied correctly for the occupancy type.",
+          },
+          {
+            bold: "HVAC and mechanical equipment.",
+            text: " Sized from the equipment nameplate data or mechanical schedules — not estimated. Includes the largest motor load calculated at 125% per NEC requirements.",
+          },
+          {
+            bold: "Kitchen and laundry appliances.",
+            text: " Residential and commercial kitchens have specific NEC demand factors and fixed appliance rules that must be applied correctly for each occupancy classification.",
+          },
+          {
+            bold: "EV charging, solar PV, and generators.",
+            text: " Each has specific NEC article requirements for how they're counted in the service calculation and how they interact with the utility interconnection.",
+          },
+          {
+            bold: "Total demand load and service size confirmation.",
+            text: " The final output: the minimum service amperage required, confirmed against the proposed panel size, with PE stamp and license number.",
+          },
+        ],
+      },
+      {
+        type: "h2",
+        content: "Why Multi-Family and Commercial Projects Are Higher Risk",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The stakes scale up significantly for multi-family and commercial projects. A miscalculated service on a 20-unit apartment building doesn't just affect one panel — it affects the entire building's utility interconnection, the utility transformer sizing, and every tenant's service quality. Utilities in Texas, Tennessee, Arizona, and Florida all require a load calculation as part of the service application. If the engineer's calculation and the utility's calculation don't agree, the service application is rejected and construction stalls.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Commercial projects add another layer: specific occupancy-based load requirements under NEC Table 220.12, demand factors for commercial kitchen equipment, emergency and standby power calculations, and in many cases a separate utility coordination study. These are not tasks for a general electrician or a residential-focused designer — they require a PE Electrical Engineer with commercial project experience.",
+      },
+      {
+        type: "h2",
+        content: "What A1 Engineering Provides",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A1 Engineering's PE Electrical team produces load calculations for residential, multi-family, and commercial projects across Texas, Tennessee, Arizona, and Florida. Every calculation is stamped by a licensed PE Electrical Engineer, coordinated against the architectural and mechanical drawings, and formatted to satisfy the permit submittal requirements of the specific jurisdiction.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Beyond the base load calculation, we design panel schedules, size solar PV systems, engineer EV charging infrastructure, specify generator and backup power systems, and produce the HVAC electrical requirements that your mechanical contractor needs. Everything in one coordinated set — no gaps between what the electrical plans show and what every other trade is building.",
+      },
+      { type: "states" },
+      { type: "rule" },
+      {
+        type: "paragraph",
+        content:
+          "If you need a PE-stamped load calculation, a panel schedule review, or electrical engineering for a new build, addition, or system upgrade — upload your project details and we'll respond within 24 hours. For time-sensitive inspections, call us directly at (214) 382-9584.",
+      },
+      {
+        type: "tags",
+        items: [
+          { text: "PE Electrical Engineering" },
+          { text: "Load Calculations" },
+          { text: "Panel Schedule" },
+          { text: "Electrical Inspection" },
+          { text: "NEC Compliance" },
+          { text: "Solar PV" },
+          { text: "EV Charging" },
+          { text: "Multi-Family" },
+          { text: "Texas" },
+          { text: "Tennessee" },
+          { text: "Arizona" },
+          { text: "Florida" },
+        ],
+      },
+      { type: "cta" },
+    ],
+  },
+
   // ── POST 3 — newest first ─────────────────────────────────────────────────
   {
     slug: "foundation-letters-explained-what-lenders-and-cities-require",
