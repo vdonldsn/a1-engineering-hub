@@ -243,7 +243,7 @@ export default function Index() {
                 {/* Content */}
                 <div className="relative z-10 p-6 h-full flex flex-col justify-end">
                   {/* Step Number */}
-                  <div className="text-5xl font-heading font-bold text-primary/40 mb-3">
+                  <div className="text-5xl font-heading font-bold text-primary/70 mb-3">
                     {step.number}
                   </div>
 
