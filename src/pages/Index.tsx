@@ -365,7 +365,7 @@ export default function Index() {
                   <span className="inline-flex items-center gap-1.5 text-xs text-muted-foreground bg-secondary px-3 py-1.5 rounded-full font-medium">
                     <Clock className="h-3.5 w-3.5" /> 6 min read
                   </span>
-                  <span className="text-xs text-muted-foreground">April 2026</span>
+                  <span className="text-xs text-muted-foreground">April 9, 2026</span>
                   <span className="inline-flex items-center text-primary text-sm font-semibold group-hover:gap-2 transition-all ml-auto">
                     Read Article <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </span>
