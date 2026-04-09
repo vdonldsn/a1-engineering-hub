@@ -58,7 +58,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation - 40px gap from logo, max 16px font */}
-          <div className="hidden md:flex items-center gap-6 ml-10">
+          <div className="hidden md:flex items-center gap-6 ml-4">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
