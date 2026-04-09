@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import teamPhoto from "@/assets/team-photo.jpg";
 import { Layout } from "@/components/layout";
 import { Button } from "@/components/ui/button";
 import {
@@ -130,13 +131,7 @@ export default function About() {
             {/* Founders Image Placeholder */}
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden glass-card">
-                <div className="absolute inset-0 gradient-metallic opacity-20" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <Building className="h-24 w-24 text-primary/30 mx-auto mb-4" />
-                    <p className="text-muted-foreground">Professional Team Photo</p>
-                  </div>
-                </div>
+                <img src={teamPhoto} alt="A1 Engineering team reviewing blueprints on a construction site" className="w-full h-full object-cover" loading="lazy" width={1024} height={768} />
               </div>
               {/* Decorative Element */}
               <div className="absolute -bottom-4 -right-4 w-32 h-32 gradient-metallic rounded-2xl -z-10" />
