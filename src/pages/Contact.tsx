@@ -678,10 +678,10 @@ export default function Contact() {
                     <div>
                       <div className="font-medium text-foreground">Email</div>
                       <a
-                        href="mailto:contact@a1engineering.com"
+                        href="mailto:info@a1-engr.com"
                         className="text-sm text-muted-foreground hover:text-primary transition-colors"
                       >
-                        contact@a1engineering.com
+                        info@a1-engr.com
                       </a>
                     </div>
                   </li>
