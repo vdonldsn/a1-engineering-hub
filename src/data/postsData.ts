@@ -55,7 +55,7 @@ export const posts: Post[] = [
     deck: "A failed electrical inspection doesn't always mean bad wiring. More often it means the panel was sized without a proper load calculation — and no one caught it until the inspector did. Here's what PE electrical engineers actually check, and why it matters before you build.",
     category: "PE Electrical Engineering",
     readTime: "6 min read",
-    date: "April 2026",
+    date: "April 9, 2026",
     states: ["TX", "TN", "AZ", "FL"],
     sections: [
       {
@@ -247,7 +247,7 @@ export const posts: Post[] = [
     deck: "You're closing on a loan or pulling a permit and suddenly someone asks for a 'foundation letter.' What does that mean, who has to write it, and what happens if you skip it? A licensed PE breaks it down.",
     category: "Engineering & Structural",
     readTime: "5 min read",
-    date: "April 2026",
+    date: "April 2, 2026",
     states: ["TX", "TN", "AZ", "FL"],
     sections: [
       {
@@ -414,7 +414,7 @@ export const posts: Post[] = [
     deck: "Most homeowners and contractors assume any wall can come down with a permit and a good contractor. Here's what actually happens structurally when you remove a load-bearing wall — and why a PE stamp is the difference between a clean inspection and a costly failure.",
     category: "Engineering & Structural",
     readTime: "3 min read",
-    date: "March 2026",
+    date: "March 26, 2026",
     states: ["TX", "TN", "AZ", "FL"],
     sections: [
       {
@@ -520,7 +520,7 @@ export const posts: Post[] = [
     deck: "Permit delays rarely come from bad luck. They come from missing stamps, mismatched plans, and coordination gaps that a PE-led team catches before submittal.",
     category: "Permitting & Land Development",
     readTime: "3 min read",
-    date: "March 2026",
+    date: "March 19, 2026",
     states: ["TX", "TN", "AZ", "FL"],
     sections: [
       {
