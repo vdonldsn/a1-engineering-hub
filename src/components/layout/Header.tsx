@@ -42,14 +42,18 @@ export function Header() {
       )}
     >
       <div className="w-full px-4 sm:px-6 lg:pl-8 lg:pr-8">
-        {/* Desktop: h-28 (112px), Mobile: h-20 (80px) - Increased for larger logo */}
-        <nav className="flex items-center justify-between h-20 md:h-28">
-          {/* Logo - INCREASED SIZE: Desktop: 80px (was 60px), Mobile: 56px (was 44px) */}
-          <Link to="/" className="flex items-center pl-2 md:pl-4">
+        <nav className={cn(
+          "flex items-center justify-between transition-all duration-300",
+          isScrolled ? "h-20 md:h-24" : "h-24 md:h-36"
+        )}>
+          <Link to="/" className="flex items-center">
             <img
               src={logo}
               alt="A1 Engineering"
-              className="h-14 md:h-20 w-auto"
+              className={cn(
+                "w-auto transition-all duration-300",
+                isScrolled ? "h-14 md:h-20" : "h-20 md:h-32"
+              )}
             />
           </Link>
 
