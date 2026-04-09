@@ -252,7 +252,7 @@ export default function About() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-2 border-white text-white hover:bg-white/10 text-base px-8"
+                className="border-2 border-white bg-white/20 text-white hover:bg-white/30 text-base px-8"
               >
                 <Link to="/services">View Our Services</Link>
               </Button>
