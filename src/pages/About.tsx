@@ -94,10 +94,10 @@ export default function About() {
               
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  A1 Engineering was founded by a Mechanical Engineer and an Electrical Engineer who first met in college. United by their passion for precision and problem-solving, they set out to create a firm that would redefine engineering services for land development.
+                  A1 Engineering was founded by a Licensed Professional Electrical Engineer driven by a passion for precision, problem-solving, and delivering excellence in land development engineering services.
                 </p>
                 <p>
-                  With <strong className="text-foreground">decades of field experience</strong> and <strong className="text-foreground">rigorous academic foundations</strong>, our founders built A1 Engineering on the principles of excellence, integrity, and client-focused service.
+                  With <strong className="text-foreground">over 15 years of field experience</strong> and a <strong className="text-foreground">rigorous academic foundation</strong>, our founder built A1 Engineering on the principles of excellence, integrity, and client-focused service.
                 </p>
                 <p>
                   Today, we're proud to serve clients across multiple states, bringing the same dedication and expertise to every project—from single-family homes to complex commercial developments.
@@ -111,8 +111,8 @@ export default function About() {
                     <GraduationCap className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <div className="font-heading font-bold text-2xl text-foreground">2</div>
-                    <div className="text-sm text-muted-foreground">Engineering Degrees</div>
+                    <div className="font-heading font-bold text-2xl text-foreground">PE</div>
+                    <div className="text-sm text-muted-foreground">Electrical Engineer</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -120,7 +120,7 @@ export default function About() {
                     <Wrench className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <div className="font-heading font-bold text-2xl text-foreground">20+</div>
+                    <div className="font-heading font-bold text-2xl text-foreground">15+</div>
                     <div className="text-sm text-muted-foreground">Years Experience</div>
                   </div>
                 </div>
