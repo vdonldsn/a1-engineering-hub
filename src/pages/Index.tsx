@@ -341,31 +341,31 @@ export default function Index() {
 
             {/* ── FEATURED (2 cols) — newest post ── */}
             <Link
-              to="/insights/electrical-load-calculations-why-panels-fail-inspection"
+              to="/insights/hidden-engineering-issues-that-delay-building-permits"
               className="group lg:col-span-2 block glass-card rounded-2xl overflow-hidden hover-lift border border-border/50"
             >
               <div className="h-full p-8 md:p-10 bg-gradient-to-br from-blueprint via-background to-steel/20 blueprint-pattern flex flex-col">
                 <div className="flex items-center gap-3 mb-5">
                   <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold">
                     <BadgeCheck className="h-3.5 w-3.5" />
-                    PE Electrical Engineering
+                    Permitting & Land Development
                   </div>
                   <span className="text-xs font-semibold text-primary bg-primary/10 border border-primary/20 px-2.5 py-1 rounded-full">
                     Latest
                   </span>
                 </div>
                 <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors leading-snug">
-                  Electrical Load Calculations:{" "}
-                  <span className="text-gradient">Why Panels Fail Inspection</span>
+                  The Hidden Engineering Issues{" "}
+                  <span className="text-gradient">That Delay Building Permits</span>
                 </h3>
                 <p className="text-muted-foreground text-base leading-relaxed mb-6 flex-1">
-                  A failed electrical inspection doesn't always mean bad wiring. More often it means the panel was sized without a proper load calculation — and no one caught it until the inspector did.
+                  Most permit delays aren't caused by the obvious things. They're caused by technical engineering problems buried in the submittal that nobody flagged during design — problems that inspectors catch immediately.
                 </p>
                 <div className="flex items-center gap-4 flex-wrap pt-4 border-t border-border/50">
                   <span className="inline-flex items-center gap-1.5 text-xs text-muted-foreground bg-secondary px-3 py-1.5 rounded-full font-medium">
                     <Clock className="h-3.5 w-3.5" /> 6 min read
                   </span>
-                  <span className="text-xs text-muted-foreground">April 9, 2026</span>
+                  <span className="text-xs text-muted-foreground">April 14, 2026</span>
                   <span className="inline-flex items-center text-primary text-sm font-semibold group-hover:gap-2 transition-all ml-auto">
                     Read Article <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </span>
@@ -375,25 +375,25 @@ export default function Index() {
 
             {/* ── SECONDARY (1 col) — previous post ── */}
             <Link
-              to="/insights/foundation-letters-explained-what-lenders-and-cities-require"
+              to="/insights/electrical-load-calculations-why-panels-fail-inspection"
               className="group block glass-card rounded-2xl overflow-hidden hover-lift border border-border/50"
             >
               <div className="h-full p-6 flex flex-col">
                 <div className="w-full h-1 rounded-full bg-gradient-to-r from-primary/40 to-primary/10 mb-6" />
                 <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold mb-4 self-start">
                   <BadgeCheck className="h-3.5 w-3.5" />
-                  Engineering &amp; Structural
+                  PE Electrical Engineering
                 </div>
                 <h3 className="font-heading text-lg font-bold text-foreground mb-3 group-hover:text-primary transition-colors leading-snug flex-1">
-                  Foundation Letters Explained:{" "}
-                  <span className="text-gradient">What Lenders and Cities Actually Require</span>
+                  Electrical Load Calculations:{" "}
+                  <span className="text-gradient">Why Panels Fail Inspection</span>
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-5">
-                  You're closing on a loan or pulling a permit and someone asks for a "foundation letter." What does that mean, who has to write it, and what happens if you skip it?
+                  A failed electrical inspection doesn't always mean bad wiring. More often it means the panel was sized without a proper load calculation — and no one caught it until the inspector did.
                 </p>
                 <div className="flex items-center gap-3 flex-wrap pt-4 border-t border-border/50 mt-auto">
                   <span className="inline-flex items-center gap-1.5 text-xs text-muted-foreground bg-secondary px-3 py-1.5 rounded-full font-medium">
-                    <Clock className="h-3.5 w-3.5" /> 5 min read
+                    <Clock className="h-3.5 w-3.5" /> 6 min read
                   </span>
                   <span className="inline-flex items-center text-primary text-xs font-semibold group-hover:gap-1.5 transition-all ml-auto">
                     Read <ArrowRight className="ml-0.5 h-3.5 w-3.5 group-hover:translate-x-0.5 transition-transform" />
