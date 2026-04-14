@@ -47,6 +47,223 @@ export interface Post {
 }
 
 export const posts: Post[] = [
+  // ── POST 5 — newest first ─────────────────────────────────────────────────
+  {
+    slug: "hidden-engineering-issues-that-delay-building-permits",
+    title: "The Hidden Engineering Issues That Delay Building Permits",
+    titleAccent: "That Delay Building Permits",
+    deck: "Most permit delays aren't caused by the obvious things. They're caused by technical engineering problems buried in the submittal that nobody flagged during design — problems that inspectors and plan reviewers catch immediately. Here's the insider list.",
+    category: "Permitting & Land Development",
+    readTime: "6 min read",
+    date: "April 14, 2026",
+    states: ["TX", "TN", "AZ", "FL"],
+    sections: [
+      {
+        type: "lead",
+        content:
+          "Every developer and contractor has a story about a permit that took twice as long as it should have. The frustrating part isn't the wait — it's that the delay was almost always caused by something that a qualified engineer would have caught in the first pass. Plan reviewers aren't looking to fail submittals. They're working through a checklist, and when something doesn't check out, the whole package comes back.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "After working through hundreds of permit submittals across Texas, Tennessee, Arizona, and Florida, we've seen the same engineering problems surface repeatedly — problems that are invisible to a non-engineer but obvious to a plan reviewer. This post covers the ones that cause the most delays, why they're easy to miss, and what it takes to get them right before you submit.",
+      },
+      {
+        type: "h2",
+        content: "The Industry Gotchas Nobody Warns You About",
+      },
+      {
+        type: "h3",
+        stepNum: "1",
+        content: "Soils Data That Doesn't Match the Foundation Design",
+      },
+      {
+        type: "paragraph",
+        content:
+          "One of the most common — and most avoidable — permit delays is a foundation design that was engineered without current, site-specific geotechnical data. Engineers use soil bearing capacity values to size footings and determine foundation type. When those values are assumed, borrowed from a nearby project, or pulled from outdated surveys, the foundation design is technically invalid — and a thorough plan reviewer will ask for the geotechnical report that supports the numbers in the drawing.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Texas expansive clay soils are particularly unforgiving here. The same subdivision can have dramatically different soil conditions from lot to lot depending on depth to bedrock, moisture content, and prior grading history. A foundation designed for one lot's soil profile will not automatically work on the lot next door. Each lot needs its own GeoTechnical soil survey, and that data needs to be explicitly referenced in the foundation design documents.",
+      },
+      {
+        type: "callout-warning",
+        label: "The borrowed soils report gotcha",
+        content:
+          "Using a geotechnical report from an adjacent lot or a previous phase of the same development is one of the fastest ways to get a permit placed on hold. Plan reviewers in most TX, TN, AZ, and FL jurisdictions are trained to check that the report address matches the project address. If it doesn't, the submittal is flagged immediately — even if the soil conditions are genuinely similar.",
+      },
+      {
+        type: "h3",
+        stepNum: "2",
+        content: "Setback Violations Hidden in Scaled Drawings",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Setback violations are the permit killer that nobody sees coming because the drawings look fine at a glance. The building fits on the lot. The dimensions are labeled. But when the plan reviewer scales the drawing against the current plat, the actual distances to property lines don't match what's shown — because the drawing was produced at a slightly off scale, or the lot dimensions were taken from an old survey that didn't reflect a recorded easement or a boundary adjustment.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The fix is a current boundary survey from a licensed surveyor, with the foundation footprint overlaid by the engineer of record to verify setback compliance before the site plan is finalized. In the DFW market specifically, lot boundary discrepancies between older recorded plats and current conditions are extremely common — particularly in infill development where lots have been subdivided, re-platted, or had utilities relocated.",
+      },
+      {
+        type: "h3",
+        stepNum: "3",
+        content: "Impervious Cover Calculations That Don't Account for All Surfaces",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Most jurisdictions cap the percentage of a lot that can be covered by impervious surfaces — pavement, concrete, rooftops, and any material that prevents stormwater from percolating into the ground. What catches builders off guard is that impervious cover calculations include more than just the building footprint and driveway. Covered patios, pool decks, walkways, AC pads, and even some types of pavers all count, depending on the municipality.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A project that's right at the impervious cover limit on paper can easily tip over when a reviewer accounts for surfaces the designer didn't include. Arizona municipalities around Phoenix and Tucson are particularly strict about this due to the 100-year flood plain calculations that govern development across much of the metro. Florida's stormwater requirements add another layer — the quantity and quality of stormwater runoff must both be addressed in the civil engineering documents.",
+      },
+      {
+        type: "callout-warning",
+        label: "The pool deck calculation nobody does",
+        content:
+          "In most jurisdictions, a pool deck — even a permeable paver deck — counts toward impervious cover unless the permeability rate is specifically documented and the surface is listed on the jurisdiction's approved materials list. Builders who add pool scopes after the site plan is approved frequently find themselves over the impervious limit when the pool permit is reviewed. The time to calculate this is before the site plan is submitted, not after the pool is contracted.",
+      },
+      {
+        type: "h3",
+        stepNum: "4",
+        content: "Energy Code Compliance Gaps in the Mechanical Design",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The intersection of the building envelope and the mechanical system is where energy code compliance most often breaks down — and where plan reviewers spend serious time. The issue is that energy compliance calculations are frequently produced by whoever draws the plans rather than by an engineer who actually understands the interaction between insulation R-values, window U-factors, infiltration rates, and HVAC system sizing.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A building that passes the envelope calculation on paper can still fail the overall energy compliance check if the HVAC system is oversized — which is common when contractors size equipment conservatively for comfort rather than optimally for code compliance. Manual J load calculations, when they exist at all, are frequently produced without accounting for the actual window specifications or the correct local design temperatures. In Tennessee and Florida specifically, design temperature assumptions vary significantly by region and directly affect the Manual J output.",
+      },
+      {
+        type: "callout-info",
+        label: "What energy code compliance actually requires in TX, TN, AZ & FL",
+        items: [
+          {
+            bold: "Texas (IECC 2021 with amendments).",
+            text: " Blower door test required at rough-in and final. Duct leakage testing mandatory. Some jurisdictions require a HERS rating by a certified rater before CO is issued.",
+          },
+          {
+            bold: "Tennessee (IECC 2018 with state amendments).",
+            text: " Manual J required for HVAC sizing. Duct testing required. Eastern TN has different climate zone requirements than Middle and West TN — a single compliance calculation doesn't work statewide.",
+          },
+          {
+            bold: "Arizona (IECC 2018 with amendments).",
+            text: " Prescriptive or performance path available. Phoenix metro jurisdictions often require third-party energy inspection. Solar-ready requirements apply to new residential in most counties.",
+          },
+          {
+            bold: "Florida (Florida Building Code Energy Conservation).",
+            text: " Florida Energy Code is not the IECC — it's a separate document with different compliance paths. EnergyGauge USA is the required compliance software. Incorrect software means an automatic plan review rejection.",
+          },
+        ],
+      },
+      {
+        type: "h3",
+        stepNum: "5",
+        content: "Structural Drawings That Reference the Wrong Code Edition",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Building codes are adopted at the state level and amended locally — and the edition in force varies not just by state but sometimes by municipality within the same state. A structural drawing set that references IBC 2018 when the jurisdiction has adopted IBC 2021 will be flagged immediately. So will drawings that don't reference the correct seismic or wind speed maps for the project location, or that use ASCE 7 load combinations from a prior edition.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "This sounds like a paperwork problem, but it isn't — the code edition matters because structural load requirements, especially wind and seismic, change between editions. A wall bracing design valid under IBC 2018 may be insufficient under IBC 2021. Plan reviewers are required to verify code edition compliance, and structural drawings that reference the wrong edition trigger a correction cycle that can take weeks to resolve.",
+      },
+      {
+        type: "h3",
+        stepNum: "6",
+        content: "Accessibility Requirements Missed on Commercial Projects",
+      },
+      {
+        type: "paragraph",
+        content:
+          "ADA and TAS (Texas Accessibility Standards) compliance reviews happen at the state level for commercial projects in Texas, separate from and in addition to the local building permit review. A commercial project in Texas must receive a TAS review certificate before construction can begin on accessibility-related elements — and that review is conducted by a registered accessibility consultant, not the local building department.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The most common missed items are accessible route continuity from the public way to the building entrance, accessible parking space dimensions and slopes, restroom fixture clearances that changed under the 2012 TAS updates, and service counter heights. In Florida, similar requirements exist under the Florida Accessibility Code, which was updated in 2020 and differs from the ADA in several specific requirements that frequently catch out-of-state designers.",
+      },
+      {
+        type: "h3",
+        stepNum: "7",
+        content: "Drainage Plans That Don't Model the 100-Year Storm Event",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Civil engineering for drainage is where residential and commercial projects most frequently underinvest, and where the consequences show up most visibly at plan review. Most jurisdictions require that the proposed development not increase the peak runoff rate to adjacent properties for the 100-year storm event. Meeting this requirement requires hydrologic and hydraulic modeling — not just a grading plan with swales shown.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The gotcha here is that the calculation method matters as much as the result. Some jurisdictions require the Rational Method. Others require TR-55 or TR-20. Using the wrong method — even if the numbers happen to work — produces a calculation that the reviewer can't compare against their standard, which means a correction request regardless of whether the design is actually adequate.",
+      },
+      {
+        type: "pullquote",
+        content:
+          "Plan reviewers aren't trying to fail your submittal. They're working through a checklist. Every item on this list is something that checklist catches — and that a qualified PE catches first.",
+      },
+      {
+        type: "h2",
+        content: "The Common Thread",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Every issue on this list shares the same root cause: the engineering was either produced by someone who didn't specialize in that discipline, coordinated by someone who wasn't tracking all of the requirements simultaneously, or reviewed internally by someone without the technical background to catch the problem before submittal. Plan review is the first time a qualified engineer with jurisdiction knowledge looks at the package — and when that's also the first time these issues are caught, the delay is built in.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A PE-led firm that handles structural, civil, electrical, and energy compliance under one roof eliminates most of these problems before the package leaves the office. The soils data matches the foundation design because the same team produced both. The impervious cover is correct because the civil engineer checked it against the site plan the structural team produced. The energy code reference is current because the PE knows which edition is adopted in that jurisdiction this month, not last year.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "That's the practical value of coordination — not just efficiency, but the elimination of the gaps between disciplines where permit delays are born.",
+      },
+      { type: "states" },
+      { type: "rule" },
+      {
+        type: "paragraph",
+        content:
+          "If you have a submittal that's been flagged or a project you want to get right before it goes to plan review, upload your documents and project details and we'll respond within 24 hours. For urgent timelines, call (214) 382-9584.",
+      },
+      {
+        type: "tags",
+        items: [
+          { text: "Building Permits" },
+          { text: "Plan Review" },
+          { text: "Permit Delays" },
+          { text: "Geotechnical" },
+          { text: "Energy Code" },
+          { text: "Impervious Cover" },
+          { text: "Setback Violations" },
+          { text: "Drainage Engineering" },
+          { text: "ADA Compliance" },
+          { text: "Texas" },
+          { text: "Tennessee" },
+          { text: "Arizona" },
+          { text: "Florida" },
+        ],
+      },
+      { type: "cta" },
+    ],
+  },
+
   // ── POST 4 — newest first ─────────────────────────────────────────────────
   {
     slug: "electrical-load-calculations-why-panels-fail-inspection",
