@@ -47,6 +47,259 @@ export interface Post {
 }
 
 export const posts: Post[] = [
+  // ── POST 6 — newest first ─────────────────────────────────────────────────
+  {
+    slug: "survey-vs-site-plan-vs-engineering-drawings-whats-the-difference",
+    title: "Survey vs Site Plan vs Engineering Drawings: What's the Difference?",
+    titleAccent: "What's the Difference?",
+    deck: "Contractors, lenders, and permit offices ask for these documents constantly — often interchangeably. They're not the same thing, they're not produced by the same people, and confusing them is one of the most expensive mistakes you can make on a development project.",
+    category: "Planning & Design",
+    readTime: "8 min read",
+    date: "April 28, 2026",
+    states: ["TX", "TN", "AZ", "FL"],
+    sections: [
+      {
+        type: "lead",
+        content:
+          "At some point in every construction or development project, someone asks for 'the survey' or 'the site plan' or 'the engineering drawings' — and whoever is being asked nods and says they'll get it, while quietly wondering if those are actually three different things or just three names for the same document. They are three different things. Produced by different licensed professionals, serving different legal and technical purposes, and required at different stages of a project. Mixing them up costs time, money, and sometimes the permit itself.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "This confusion is so common because the documents look similar on paper — they're all drawings of a property with lines, dimensions, and annotations. But the information they contain, the professional credentials required to produce them, and the specific questions they answer are fundamentally different. This post breaks all three down in plain terms, explains where each one fits in the development process, and covers the most common mistakes people make when they mix them up.",
+      },
+      {
+        type: "h2",
+        content: "Document 1: The Survey",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A survey is a legal document produced by a licensed land surveyor that establishes the physical facts of a piece of land. It answers the question: what exactly do I own, and where are the legal boundaries of this property? A surveyor goes to the site, finds or sets property corner monuments, measures distances and angles, and produces a drawing that reflects what is actually on the ground — not what the deed says or what the prior owner believed.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Surveys come in several types, each answering a different version of the boundary question. A boundary survey establishes property lines. A topographic survey adds elevation data — contour lines that show how the land rises and falls across the site. An ALTA/NSPS survey (required by most commercial lenders) adds easements, encroachments, rights-of-way, and other title-related features to the boundary information. A construction survey — sometimes called staking — marks the physical locations of proposed improvements on the ground so contractors know exactly where to build.",
+      },
+      {
+        type: "callout-info",
+        label: "Survey types and when each is required",
+        items: [
+          {
+            bold: "Boundary survey.",
+            text: " Establishes legal property lines. Required for permit submittals, subdivision, and title work. The foundation for every other document on this list.",
+          },
+          {
+            bold: "Topographic survey.",
+            text: " Adds elevation data to the boundary. Required for drainage design, grading plans, and any project where site slopes affect construction.",
+          },
+          {
+            bold: "ALTA/NSPS survey.",
+            text: " Comprehensive survey combining boundary, easements, encroachments, and title elements. Required by commercial lenders before closing on any commercial real estate transaction.",
+          },
+          {
+            bold: "Construction staking.",
+            text: " Translates the approved engineering drawings into physical markers on the ground. Required before grading or foundation work begins on most commercial and many residential projects.",
+          },
+          {
+            bold: "As-built survey.",
+            text: " Documents what was actually constructed versus what was designed. Required by some lenders and jurisdictions before Certificate of Occupancy is issued.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        content:
+          "The critical thing to understand about a survey is that it is a legal record, not a design document. It describes what exists — it doesn't propose what should be built. Only a licensed land surveyor can produce one, and in most states the surveyor stamps the document with their professional seal, making it a legally defensible record of the property's physical characteristics. In Texas, surveyors are licensed by the Texas Board of Professional Land Surveying. In Florida, Tennessee, and Arizona, similar state licensing boards govern the profession.",
+      },
+      {
+        type: "callout-warning",
+        label: "The most expensive survey mistake",
+        content:
+          "Using an old survey — even one from a previous transaction on the same property — is one of the most common and costly mistakes in development. Property boundaries can change through lot splits, re-plats, easement additions, and encroachment settlements. A survey more than five to ten years old may not reflect current legal conditions, and a lender or permit office that discovers this will require a new one. Order a current survey before any design work begins, not after.",
+      },
+      {
+        type: "h2",
+        content: "Document 2: The Site Plan",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A site plan is a design document — it proposes what will be built and where, overlaid on the legal reality established by the survey. While a survey answers 'what is here,' a site plan answers 'what are we going to build, and how does it fit on this property?' It is typically produced by a civil engineer, a landscape architect, or — for simpler residential projects — an architect, and it uses the boundary and topographic survey as its base.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A site plan shows the proposed building footprint positioned on the lot with setback dimensions confirmed, the driveway and parking layout, utility connections (water, sewer, electrical, gas, and stormwater), proposed grading to direct drainage away from the structure, landscaping if required by the jurisdiction, and any easements or other encumbrances that affect where improvements can be placed. It is the document that answers whether the project fits within the rules the jurisdiction has set for that piece of land.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "This is why the sequence matters so much: you cannot produce a reliable site plan without a current survey. Engineers and architects who skip the survey step and draft site plans based on assumed or estimated property dimensions are setting up their clients for permit rejection. If the proposed building footprint sits one foot inside a setback line that turns out to be two feet shorter than assumed, the site plan is wrong and the permit won't issue until it's corrected.",
+      },
+      {
+        type: "pullquote",
+        content:
+          "A site plan without a current survey underneath it is a design built on assumptions. Assumptions are fine until they're wrong — and they're wrong more often than most designers admit.",
+      },
+      {
+        type: "h3",
+        stepNum: "1",
+        content: "What Jurisdictions Actually Review on a Site Plan",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Plan reviewers checking a site plan aren't just looking at whether the building fits on the lot. They're verifying setback compliance from every property line, right-of-way, and easement simultaneously. They're checking impervious cover against the jurisdiction's maximum — which varies by zoning district and often by drainage basin. They're confirming that the driveway approach meets the city's width and sight-line requirements. They're verifying that utility connections are shown at the correct locations and that the proposed stormwater management doesn't shift runoff problems onto adjacent properties.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "In most Texas municipalities, the site plan review is conducted by the city's planning and development department, separate from the building department that reviews the structural drawings. That means a site plan rejection and a structural drawing rejection can happen independently on the same project — and in sequence, adding weeks to the timeline if the site plan isn't right when it's submitted.",
+      },
+      {
+        type: "h3",
+        stepNum: "2",
+        content: "When a Site Plan Requires a PE Stamp",
+      },
+      {
+        type: "paragraph",
+        content:
+          "For simple residential projects in some jurisdictions, a site plan doesn't require a PE stamp — an architect or even a homeowner can produce an acceptable one. But for commercial projects, projects in special flood hazard areas, projects with complex drainage requirements, projects requiring a stormwater pollution prevention plan (SWPPP), or any project where the civil engineering components are non-trivial, a PE-stamped site plan is required. In these cases, the engineer of record is certifying that the grading, drainage, and utility design meets applicable codes and engineering standards — a certification that only a licensed PE can make.",
+      },
+      {
+        type: "h2",
+        content: "Document 3: Engineering Drawings",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Engineering drawings are the technical design documents that tell contractors exactly how to build something so that it performs structurally, mechanically, and electrically as intended. While the survey establishes legal reality and the site plan shows what goes where, engineering drawings show how each component is constructed — the size of every beam, the depth and reinforcement of every footing, the routing and sizing of every electrical circuit, and the specifications for every mechanical system.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A full set of engineering drawings for a commercial building includes structural drawings (foundation design, framing plans, connection details), MEP drawings (mechanical, electrical, and plumbing systems), civil drawings (grading, drainage, utility design — which overlap with the site plan but go into greater technical detail), and in some cases fire protection, geotechnical, and special systems drawings. Each discipline is typically handled by a separate licensed engineer who stamps their portion of the drawing set.",
+      },
+      {
+        type: "callout-info",
+        label: "What each set of engineering drawings covers",
+        items: [
+          {
+            bold: "Structural drawings.",
+            text: " Foundation design, framing plans, load paths, connection details, and material specifications. Stamped by a licensed structural PE. Required for virtually every permitted construction project.",
+          },
+          {
+            bold: "Civil drawings.",
+            text: " Detailed grading plans, drainage calculations, utility design, and erosion control. More detailed than a site plan — this is the engineering behind what the site plan shows. Stamped by a licensed civil PE.",
+          },
+          {
+            bold: "Electrical drawings.",
+            text: " Panel schedules, circuit layouts, load calculations, service entrance design, and any special systems (solar PV, EV charging, emergency power). Stamped by a licensed electrical PE.",
+          },
+          {
+            bold: "Mechanical drawings.",
+            text: " HVAC system design, duct layouts, equipment schedules, and energy compliance documentation. Typically produced by a mechanical engineer and coordinated with the electrical drawings.",
+          },
+          {
+            bold: "Geotechnical report.",
+            text: " Not a drawing set, but an engineering document that supports the foundation design. Produced by a geotechnical engineer from soil boring and testing data. Required on most commercial projects and increasingly on residential projects in clay-heavy markets like DFW.",
+          },
+        ],
+      },
+      {
+        type: "h2",
+        content: "How the Three Documents Work Together",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The relationship between these three documents isn't just sequential — it's cumulative. Each one builds on the one before it, and errors that aren't caught early compound forward into the next document. A boundary error in the survey creates a setback error in the site plan. A setback error in the site plan creates a foundation placement error in the structural drawings. A foundation placement error in the structural drawings causes a failed inspection — after construction has already started.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "This is why the sequence of a properly run project looks like this: boundary and topographic survey first, site plan second using the survey as the base, engineering drawings third using the approved site plan as the context. When projects skip steps — particularly when they start engineering drawings before the survey is complete, or produce a site plan from assumed dimensions — they're building coordination risk into the project from the beginning.",
+      },
+      {
+        type: "h3",
+        stepNum: "3",
+        content: "The Coordination Problem That Causes Most Permit Rejections",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The most common scenario that delays permits isn't one bad document — it's two documents that don't agree with each other. The site plan shows the building in one location. The structural drawings show the foundation in a slightly different location. The electrical drawings reference equipment that isn't shown on the mechanical drawings. The civil drainage design assumes a grade that's different from what the topographic survey shows.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Plan reviewers are trained to find these inconsistencies because inconsistent drawings can produce dangerous construction — a contractor who doesn't know which drawing to follow may choose incorrectly. When reviewers find them, the entire permit package is returned for correction, even if the individual documents are technically correct within their own discipline. The only way to prevent coordination failures is to have all three document types produced by a team that's actively communicating — or by a single PE-led firm that owns the coordination across all disciplines.",
+      },
+      {
+        type: "h2",
+        content: "Who Produces Each Document — and Why It Matters",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The licensing requirements for each document type are specific and non-negotiable. Only a licensed land surveyor can produce a survey — an engineer cannot do this, and an architect cannot do this. A PE can produce engineering drawings in their licensed discipline — a structural PE cannot stamp electrical drawings, and a civil PE cannot stamp structural drawings. A site plan for a commercial project typically requires a civil PE stamp for the drainage and utility components, even if an architect produced the building footprint portion.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "In practice, the most efficient project teams have a surveyor, a civil PE, and the relevant engineering PEs all working from the same base file, with a coordinating engineer — often the civil PE — owning the integration between documents. When these professionals work independently and hand off files to each other without active coordination, the gaps between documents are where permit delays are born.",
+      },
+      {
+        type: "callout-warning",
+        label: "The unlicensed production gotcha",
+        content:
+          "Online tools and non-licensed designers can produce documents that look like surveys, site plans, and engineering drawings. Plan reviewers in TX, TN, AZ, and FL are trained to check for professional stamps on documents that require them. A site plan submitted without a required PE stamp, or a drawing that claims to be a survey without a licensed surveyor's seal, will be rejected at intake — before the plan review even begins. The time and cost of redoing these documents almost always exceeds what it would have cost to hire the right professional from the start.",
+      },
+      {
+        type: "h2",
+        content: "What A1 Engineering Covers in This Stack",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A1 Engineering provides the full engineering and design layer of this document stack — site plans, civil drawings, structural engineering drawings, electrical engineering drawings, and energy compliance documentation — all stamped by licensed PEs across Texas, Tennessee, Arizona, and Florida. For projects in the DFW area, we also provide land survey services directly, meaning the survey and the engineering documents come from the same coordinated team rather than being handed off between separate firms.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The practical result is that the survey data, the site plan, and the engineering drawings are internally consistent from the start — produced by people who are talking to each other rather than working from whatever the previous firm handed over. That consistency is what plan reviewers are checking for, and it's what gets permit packages approved on the first submission instead of the third.",
+      },
+      { type: "states" },
+      { type: "rule" },
+      {
+        type: "paragraph",
+        content:
+          "If you're starting a project and aren't sure which documents you need or in what order, upload your project details and we'll walk you through it. For DFW projects that need survey and engineering under one roof, call us directly at (214) 382-9584.",
+      },
+      {
+        type: "tags",
+        items: [
+          { text: "Land Survey" },
+          { text: "Site Plans" },
+          { text: "Engineering Drawings" },
+          { text: "Planning & Design" },
+          { text: "Building Permits" },
+          { text: "Civil Engineering" },
+          { text: "Structural Engineering" },
+          { text: "PE Stamped Plans" },
+          { text: "DFW" },
+          { text: "Texas" },
+          { text: "Tennessee" },
+          { text: "Arizona" },
+          { text: "Florida" },
+        ],
+      },
+      { type: "cta" },
+    ],
+  },
+
   // ── POST 5 — newest first ─────────────────────────────────────────────────
   {
     slug: "hidden-engineering-issues-that-delay-building-permits",
