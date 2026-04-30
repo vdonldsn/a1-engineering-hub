@@ -47,6 +47,237 @@ export interface Post {
 }
 
 export const posts: Post[] = [
+  // ── POST 7 — newest first ─────────────────────────────────────────────────
+  {
+    slug: "what-is-an-mep-drawing-set-and-why-every-commercial-project-needs-one",
+    title: "What Is an MEP Drawing Set — and Why Does Every Commercial Project Need One?",
+    titleAccent: "Why Does Every Commercial Project Need One?",
+    deck: "If you've ever been handed a permit correction asking for MEP drawings and wondered what that actually means, you're not alone. MEP is one of those industry terms that gets thrown around constantly but rarely explained — and misunderstanding it can stall a commercial project for weeks.",
+    category: "Planning & Design",
+    readTime: "6 min read",
+    date: "April 30, 2026",
+    states: ["TX", "TN", "AZ", "FL"],
+    sections: [
+      {
+        type: "lead",
+        content:
+          "Every commercial building — whether it's a restaurant, a medical office, a retail strip, or a multi-family complex — runs on three invisible systems that most people never think about until something goes wrong: the mechanical system that moves air and controls temperature, the electrical system that powers everything, and the plumbing system that brings water in and takes waste out. MEP stands for Mechanical, Electrical, and Plumbing. And an MEP drawing set is the engineered, PE-stamped documentation that shows exactly how those three systems are designed, sized, and installed in your building.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Unlike a structural drawing set — which most builders expect to produce for any permitted project — MEP drawings are frequently treated as an afterthought. They get requested by the permit office, hastily assembled from vendor cut sheets and rough sketches, and submitted without PE stamps or proper coordination with the architectural and structural sets. The result is almost always a correction cycle that pushes the permit timeline out by weeks. This post explains what MEP drawings actually are, what each discipline covers, when they're required, and what goes wrong when they're done incorrectly.",
+      },
+      {
+        type: "h2",
+        content: "The M: Mechanical Drawings",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Mechanical drawings cover the HVAC system — heating, ventilation, and air conditioning. For a commercial building, this is a significantly more complex scope than a residential system. A mechanical engineer calculates the heating and cooling loads for each zone of the building based on the building envelope, occupancy type, internal heat gains from equipment and lighting, and the local climate data for the project location. From those calculations, they size the equipment, design the duct distribution system, specify the diffuser and grille locations, and document the ventilation rates required by code for each occupancy type.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "What most builders don't realize is that commercial mechanical design is governed by ASHRAE standards — specifically ASHRAE 62.1 for ventilation and ASHRAE 90.1 for energy efficiency — on top of the local mechanical code. These standards dictate minimum outdoor air delivery rates, filtration requirements, exhaust requirements for specific occupancies like kitchens and restrooms, and the energy performance of the overall HVAC system. A mechanical drawing set that doesn't demonstrate compliance with these standards will not pass plan review in any jurisdiction in Texas, Tennessee, Arizona, or Florida.",
+      },
+      {
+        type: "callout-info",
+        label: "What mechanical drawings typically include",
+        items: [
+          {
+            bold: "Mechanical floor plans.",
+            text: " Showing equipment locations, duct routing, supply and return air locations, and exhaust systems overlaid on the architectural floor plan.",
+          },
+          {
+            bold: "Equipment schedules.",
+            text: " Listing each piece of HVAC equipment with its model, capacity, airflow rates, electrical requirements, and efficiency ratings.",
+          },
+          {
+            bold: "Load calculations.",
+            text: " The Manual J or ASHRAE-method calculation demonstrating that equipment is sized correctly for the building's actual heating and cooling demand.",
+          },
+          {
+            bold: "Ventilation schedules.",
+            text: " Documenting outdoor air delivery rates per occupancy zone to demonstrate ASHRAE 62.1 compliance.",
+          },
+          {
+            bold: "Details and specifications.",
+            text: " Installation details for equipment mounting, duct construction standards, insulation requirements, and control sequences.",
+          },
+        ],
+      },
+      {
+        type: "h2",
+        content: "The E: Electrical Drawings",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Electrical drawings for a commercial project are a different animal from a residential electrical plan. A licensed PE Electrical Engineer produces a full load calculation per NEC Article 220 — accounting for every load in the building including lighting, receptacles, HVAC equipment, kitchen equipment, elevators if applicable, and any special systems. From that calculation, they size the electrical service, design the panel boards and distribution system, produce the panel schedules, and lay out the electrical distribution throughout the building.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Commercial electrical drawings also cover systems that simply don't exist in residential projects: emergency and exit lighting with battery backup, fire alarm system power and wiring, mechanical equipment disconnects and motor control, outdoor site lighting with photometric calculations in many jurisdictions, and tenant metering if the building has multiple tenants. Each of these has specific NEC requirements for how it's designed and documented, and each must be shown on the electrical drawings before the permit will issue.",
+      },
+      {
+        type: "callout-warning",
+        label: "The tenant build-out trap",
+        content:
+          "When a commercial building is built as a shell and tenants finish their own spaces, many owners assume the shell electrical drawings cover the tenant spaces. They don't. Each tenant build-out requires its own electrical drawings showing the tenant's specific load, panel modifications or additions, and any special systems that tenant needs. Submitting a tenant permit without updated electrical drawings — or without a PE reviewing how the tenant load affects the building's overall service — is one of the most common commercial permit rejections in the DFW market.",
+      },
+      {
+        type: "h2",
+        content: "The P: Plumbing Drawings",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Plumbing drawings document the water supply, waste, and vent systems throughout the building. For a commercial project, this means showing the domestic cold and hot water distribution from the meter through every fixture, the drainage system from every fixture to the sewer connection, and the vent stack layout that allows the drain system to function properly. In states like Texas, commercial plumbing plans must be stamped by a licensed engineer or a licensed master plumber with plan-drawing authorization — and the requirements vary depending on the building's occupancy and the jurisdiction.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "What makes commercial plumbing more complex than residential is the fixture count and the occupancy-specific requirements. A restaurant has grease interceptor sizing calculations, a medical office has specific hot water temperature requirements for infection control, a multi-family building has water heater capacity calculations based on peak demand, and any building above a certain size may require a backflow prevention assembly at the meter. Each of these requirements generates specific drawing content that the plan reviewer will check before approving the permit.",
+      },
+      {
+        type: "h2",
+        content: "Why Coordination Between M, E, and P Is the Hard Part",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Here's what makes MEP genuinely difficult to get right: the three systems have to share the same physical space inside the building — the ceiling cavity, the mechanical rooms, the wall cavities, and the utility corridors — and they frequently compete for the same space. A duct trunk that needs to run at one elevation collides with a plumbing drain that needs a certain slope at the same elevation. An electrical conduit chase conflicts with a mechanical equipment access panel. A grease duct that requires fire-rated enclosure takes up space that was assumed to be available for electrical distribution.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "When MEP drawings are produced by three separate firms who never talk to each other, these conflicts don't get discovered until the systems are being installed — at which point the contractor is in the ceiling with a problem that requires a field modification, a change order, and sometimes a revised permit submittal. When MEP drawings are produced by a coordinated team working from the same architectural base drawing, conflicts are resolved on paper before construction begins. That coordination is the single biggest value of a well-produced MEP drawing set.",
+      },
+      {
+        type: "pullquote",
+        content:
+          "MEP conflicts discovered in the ceiling during construction cost ten times what they cost to resolve on paper during design. Coordination isn't a luxury — it's the cheapest line item in the project.",
+      },
+      {
+        type: "h2",
+        content: "When Are MEP Drawings Required?",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The short answer for commercial projects: almost always. Any commercial new construction project in TX, TN, AZ, or FL will require mechanical, electrical, and plumbing drawings as part of the permit submittal. The specific requirements vary by jurisdiction and project type, but the baseline expectation is a complete MEP set stamped by licensed engineers before a commercial building permit will be approved.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "For tenant build-outs and renovations, the threshold is lower but the requirement still applies. Any renovation that touches an MEP system — moving ductwork, adding circuits, relocating plumbing — requires permitted drawings for the affected systems. Jurisdictions differ on exactly where the threshold falls between minor work that can be permitted with simplified drawings and major work that requires a full engineered set, but the safe assumption is that any work affecting a commercial MEP system needs at minimum a PE review and typically a stamped drawing.",
+      },
+      {
+        type: "callout-info",
+        label: "Projects that commonly require a full MEP set",
+        items: [
+          {
+            bold: "Commercial new construction.",
+            text: " Any building that isn't single-family residential. Restaurants, retail, office, medical, industrial, and multi-family all require full MEP drawings.",
+          },
+          {
+            bold: "Change of occupancy.",
+            text: " Converting a building from one occupancy type to another — an office to a restaurant, a warehouse to a gym — triggers MEP review because occupancy-specific requirements change.",
+          },
+          {
+            bold: "Additions over 50% of existing floor area.",
+            text: " Many jurisdictions require the entire building's MEP systems to be brought up to current code when an addition exceeds this threshold.",
+          },
+          {
+            bold: "Healthcare and food service facilities.",
+            text: " These occupancies have enhanced mechanical ventilation, plumbing fixture, and electrical requirements that require full MEP documentation regardless of project size.",
+          },
+          {
+            bold: "Multi-family projects of three or more units.",
+            text: " Most jurisdictions classify these as commercial for permitting purposes, requiring commercial-grade MEP drawings for the entire building.",
+          },
+        ],
+      },
+      {
+        type: "h2",
+        content: "The Most Common MEP Mistakes That Delay Permits",
+      },
+      {
+        type: "h3",
+        stepNum: "1",
+        content: "Submitting vendor submittals instead of engineering drawings",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Equipment cut sheets and vendor submittals show what a piece of equipment does — they don't show how it's engineered into the building's systems. Plan reviewers know the difference immediately, and submitting product literature in place of engineering drawings is one of the fastest ways to get a commercial permit package returned at intake. Engineering drawings show the system design, not just the equipment selection.",
+      },
+      {
+        type: "h3",
+        stepNum: "2",
+        content: "Missing energy compliance documentation",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Commercial energy compliance in TX, TN, AZ, and FL requires specific documentation showing that the building's mechanical and electrical systems meet the applicable energy code — ASHRAE 90.1, the IECC commercial provisions, or the Florida Building Code Energy Conservation chapter depending on the state. This documentation is a required part of the MEP drawing set, not a separate submission. Omitting it produces a plan review comment on every commercial permit submittal without exception.",
+      },
+      {
+        type: "h3",
+        stepNum: "3",
+        content: "Wrong PE license type on the stamp",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Mechanical drawings must be stamped by a mechanical PE. Electrical drawings must be stamped by an electrical PE. Plumbing drawings, depending on the state, must be stamped by either a PE or a licensed master plumber with plan authority. A mechanical PE cannot stamp electrical drawings — the license categories are specific to the discipline, and plan reviewers check the stamp category against the drawing type as a standard step in the review process.",
+      },
+      {
+        type: "h2",
+        content: "What A1 Engineering Provides",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A1 Engineering's PE Electrical team handles the electrical engineering component of commercial MEP packages across Texas, Tennessee, Arizona, and Florida — load calculations, panel schedules, distribution design, lighting layouts, emergency power systems, solar PV integration, and EV charging infrastructure — all PE-stamped and coordinated with the mechanical and architectural drawings. For projects that need the full MEP scope under one roof, we work with coordinated mechanical and plumbing teams to produce a unified drawing set that moves through plan review as a consistent package.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Whether you're building new commercial construction, converting an existing space, or navigating a tenant build-out, the right time to get MEP engineering engaged is at the design phase — before the architectural drawings are finalized and before any systems are roughed in. That's when coordination is cheapest and when the engineering has the most influence over how the project gets built.",
+      },
+      { type: "states" },
+      { type: "rule" },
+      {
+        type: "paragraph",
+        content:
+          "If you have a commercial project that needs electrical engineering or a full MEP coordination review, upload your plans and project details and we'll respond within 24 hours. For time-sensitive submittals, call us directly at (214) 382-9584.",
+      },
+      {
+        type: "tags",
+        items: [
+          { text: "MEP Drawings" },
+          { text: "Mechanical Engineering" },
+          { text: "PE Electrical Engineering" },
+          { text: "Plumbing Design" },
+          { text: "Commercial Construction" },
+          { text: "Building Permits" },
+          { text: "ASHRAE Compliance" },
+          { text: "Tenant Build-Out" },
+          { text: "Energy Code" },
+          { text: "Texas" },
+          { text: "Tennessee" },
+          { text: "Arizona" },
+          { text: "Florida" },
+        ],
+      },
+      { type: "cta" },
+    ],
+  },
+
   // ── POST 6 — newest first ─────────────────────────────────────────────────
   {
     slug: "survey-vs-site-plan-vs-engineering-drawings-whats-the-difference",
