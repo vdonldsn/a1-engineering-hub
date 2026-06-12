@@ -47,6 +47,243 @@ export interface Post {
 }
 
 export const posts: Post[] = [
+  // ── POST 8 — newest first ─────────────────────────────────────────────────
+  {
+    slug: "hers-ratings-explained-what-the-number-means-and-who-tests-it",
+    title: "HERS Ratings Explained: What the Number Actually Means and Who Has to Test It",
+    titleAccent: "What the Number Actually Means and Who Has to Test It",
+    deck: "Your new home has a HERS score of 52. Your neighbor's is 68. Your lender is asking for proof of HERS compliance before closing. If you're nodding along while quietly having no idea what any of that means — this post is for you.",
+    category: "Green & Energy",
+    readTime: "7 min read",
+    date: "June 12, 2026",
+    states: ["TX", "TN", "AZ", "FL"],
+    sections: [
+      {
+        type: "lead",
+        content:
+          "Energy efficiency used to be a vague selling point — good insulation, a high-efficiency HVAC unit, maybe some double-pane windows. Today it's a number. A single score that shows up on closing documents, permit packages, appraisals, and mortgage conditions. That number is the HERS Index, and whether you're a homeowner, a builder, or a developer, understanding what it measures — and what it takes to certify it — is increasingly non-negotiable.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "HERS stands for Home Energy Rating System. It's the nationally recognized standard for measuring the energy performance of residential buildings, developed and administered by RESNET — the Residential Energy Services Network. The score is calculated by a certified HERS rater who models the home's energy systems and compares the result against a reference home built to a standardized baseline. The lower the score, the more energy efficient the home.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "That sounds straightforward enough. Where it gets complicated — and where builders, buyers, and developers run into real problems — is in understanding the difference between what a HERS rater does and what a PE energy engineer does, which states require a HERS score before you can occupy a new home, and what happens when the blower door test at the end of construction reveals that the home doesn't perform the way the design predicted. This post covers all of it.",
+      },
+      {
+        type: "h2",
+        content: "What the HERS Scale Actually Means",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The HERS Index is built around a reference point of 100 — a home built to the 2006 IECC energy code. A home that scores 100 uses exactly as much energy as that reference home. A home that scores 50 uses half as much. A home that scores 0 uses no net energy at all — the definition of a net-zero home. Most new construction today targets a score somewhere between 50 and 70, depending on the jurisdiction's energy code requirements and the builder's goals.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The practical implication is that every point lower on the HERS scale represents measurable energy savings and real dollar impact over the life of the home. A home that scores 55 instead of 75 will have meaningfully lower utility bills, better thermal comfort, and a more defensible appraisal value in markets where energy performance is factored into valuations. In Texas, where summer cooling loads are extreme, the difference between a HERS 55 and a HERS 75 home can translate to hundreds of dollars annually in electricity costs.",
+      },
+      {
+        type: "callout-info",
+        label: "HERS score benchmarks at a glance",
+        items: [
+          {
+            bold: "HERS 100.",
+            text: " The reference home — built to 2006 IECC. Most existing homes built before 2010 score in this range or higher.",
+          },
+          {
+            bold: "HERS 70–85.",
+            text: " Typical for homes built to 2009–2012 IECC. Compliant in many jurisdictions but increasingly below current code minimums.",
+          },
+          {
+            bold: "HERS 50–69.",
+            text: " The target range for most new construction in TX, TN, AZ, and FL under current energy codes. ENERGY STAR certification typically requires a score at or below 70.",
+          },
+          {
+            bold: "HERS 40–49.",
+            text: " High-performance construction. Requires careful envelope design, high-efficiency mechanical systems, and tight air sealing. DOE Zero Energy Ready Home baseline.",
+          },
+          {
+            bold: "HERS 0 or below.",
+            text: " Net-zero or net-positive. Requires solar PV or other on-site generation to offset all energy consumption. The home produces as much or more energy than it uses.",
+          },
+        ],
+      },
+      {
+        type: "h2",
+        content: "What Goes Into the Calculation",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A HERS score isn't a gut-feel estimate or a checklist of features. It's a whole-home energy model, produced using RESNET-approved software, that accounts for every energy-related characteristic of the building. The inputs include the thermal envelope — insulation levels in walls, ceilings, and floors, window U-factors and solar heat gain coefficients, and foundation insulation or slab edge conditions. They also include the mechanical systems — HVAC equipment efficiency ratings, duct location and leakage rates, water heating equipment and distribution losses, and any on-site generation like solar PV.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Two of those inputs deserve special attention because they're not assumptions — they're measured values that come from physical testing performed during construction. The duct leakage test quantifies how much conditioned air leaks out of the HVAC distribution system before it reaches the living space. The blower door test quantifies the overall air tightness of the building envelope. Both tests are performed by the HERS rater on the actual completed home, and both results feed directly into the final score calculation. A home that modeled well during design can score significantly worse than predicted if duct sealing or air barrier installation was sloppy during construction.",
+      },
+      {
+        type: "pullquote",
+        content:
+          "A HERS score isn't just a design target. It's a verified measurement of how the finished home actually performs — not how it was supposed to perform on paper.",
+      },
+      {
+        type: "h2",
+        content: "The Blower Door Test: What It Is and Why It Makes Builders Nervous",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A blower door test is exactly what it sounds like: a calibrated fan is temporarily installed in an exterior door opening, the house is depressurized to a standard test pressure (50 pascals), and the airflow required to maintain that pressure is measured. That number — expressed in cubic feet per minute at 50 pascals, or CFM50 — tells you how leaky the building envelope is. The lower the CFM50 reading relative to the home's floor area, the tighter the envelope.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "What makes builders nervous about blower door tests is that they're objective. Air leaks don't hide. A house that looks tight — properly installed house wrap, caulked windows, foam-sealed penetrations — can still fail if the electrical boxes weren't sealed, if the attic hatch wasn't gasketed, if the plumbing penetrations through the top plate were left open. The blower door test finds all of it. In Texas under the 2021 IECC, new residential construction must achieve a maximum of 3 air changes per hour at 50 pascals — a requirement that catches a meaningful percentage of homes that weren't built with deliberate air sealing in mind.",
+      },
+      {
+        type: "callout-warning",
+        label: "Failing the blower door test after drywall",
+        content:
+          "The most expensive blower door failure scenario is when the test is performed after drywall is installed. At that point, finding and fixing air leaks requires cutting into finished surfaces to access the problem areas — top plates, electrical boxes, plumbing penetrations — all of which were accessible and easy to seal during framing. Most energy programs and HERS raters recommend a rough-in blower door test before drywall specifically to avoid this. If your builder isn't scheduling that test, ask why.",
+      },
+      {
+        type: "h2",
+        content: "HERS Rater vs PE Energy Engineer: Not the Same Role",
+      },
+      {
+        type: "paragraph",
+        content:
+          "This is the distinction that causes the most confusion on job sites and in permit offices — and it's worth being precise about. A HERS rater is a RESNET-certified professional who models homes, performs field testing (blower door, duct leakage), and issues the official HERS score. They are not required to be engineers. Many HERS raters are building science consultants, energy auditors, or construction professionals with specific RESNET certification. Their role is to verify that the home performs as designed and to issue the rating that certifies compliance.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A PE energy engineer plays a different role. They design the energy compliance strategy from the ground up — specifying the insulation assembly, selecting mechanical equipment to meet both load and efficiency requirements, producing the energy compliance documentation required for the permit package, and stamping the drawings that confirm the proposed design meets code. In jurisdictions that require PE-stamped energy compliance documentation as part of the permit submittal — which is increasingly common for commercial projects and for residential projects in jurisdictions with enhanced requirements — the PE is the one who produces that document. The HERS rater then verifies at the end of construction that what was built matches what the PE designed.",
+      },
+      {
+        type: "callout-info",
+        label: "When you need a HERS rater vs a PE energy engineer",
+        items: [
+          {
+            bold: "New residential construction in TX, TN, AZ, or FL.",
+            text: " Most jurisdictions require a HERS rating for CO. Some also require PE-stamped energy compliance documentation in the permit package — check your jurisdiction before design begins.",
+          },
+          {
+            bold: "ENERGY STAR or DOE Zero Energy Ready certification.",
+            text: " Requires a HERS rater certified in that specific program. Not all HERS raters are certified for all programs.",
+          },
+          {
+            bold: "FHA/VA green energy requirements.",
+            text: " Some loan programs require HERS documentation at closing. A HERS rater produces this; a PE is not required unless the jurisdiction also requires PE-stamped energy drawings.",
+          },
+          {
+            bold: "Commercial projects.",
+            text: " HERS applies to residential only. Commercial energy compliance uses ASHRAE 90.1 or the IECC commercial provisions and requires PE-stamped documentation. A HERS rater cannot certify a commercial building.",
+          },
+          {
+            bold: "Permit-required energy compliance documentation.",
+            text: " When a jurisdiction requires a PE stamp on the energy compliance forms in the permit package, only a licensed PE can produce it — regardless of whether a HERS rater is also involved.",
+          },
+        ],
+      },
+      {
+        type: "h2",
+        content: "State-by-State: What TX, TN, AZ, and FL Actually Require",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Energy code requirements are not uniform across the four states A1 Engineering serves, and the differences are significant enough to matter on every project. Understanding what each state requires — and where local jurisdictions have layered on additional requirements above the state baseline — is part of what A1 Engineering tracks on behalf of every client.",
+      },
+      {
+        type: "h3",
+        stepNum: "1",
+        content: "Texas",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Texas adopted the 2021 IECC with state amendments for residential construction. New single-family homes are required to meet a HERS score threshold that varies by climate zone — Texas spans climate zones 2 through 4, and the requirements differ across them. A blower door test at rough-in and a duct leakage test are both required. Some Texas municipalities — particularly in the DFW metro — have adopted local amendments that tighten the state baseline further. The Texas Department of Licensing and Regulation (TDLR) oversees commercial energy code compliance separately from residential.",
+      },
+      {
+        type: "h3",
+        stepNum: "2",
+        content: "Tennessee",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Tennessee adopted the 2018 IECC with state amendments. The state spans climate zones 3 and 4 — Eastern Tennessee (the mountains) has significantly different heating load requirements than Middle and West Tennessee. A single set of compliance documentation does not work statewide, and builders expanding from Nashville or Memphis into Eastern Tennessee frequently discover this when their standard energy package fails to meet the climate zone 4 requirements. Duct testing is required; blower door testing is required in climate zone 4.",
+      },
+      {
+        type: "h3",
+        stepNum: "3",
+        content: "Arizona",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Arizona adopted the 2018 IECC with state amendments and spans climate zones 2 through 5 — one of the widest climate zone ranges of any single state. Phoenix and Tucson are in climate zone 2, the hottest classification, with extreme cooling loads and minimal heating requirements. Flagstaff is in climate zone 5 with significant heating loads and snow. Most Arizona jurisdictions require a HERS rating for new residential construction. The Phoenix metro has solar-ready requirements that affect both the electrical design and the HERS calculation when solar is planned.",
+      },
+      {
+        type: "h3",
+        stepNum: "4",
+        content: "Florida",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Florida does not use the IECC for residential energy compliance. Florida has its own Florida Building Code — Energy Conservation chapter, and compliance must be demonstrated using EnergyGauge USA software specifically. This catches out-of-state designers constantly — submitting an REScheck or COMcheck compliance report instead of an EnergyGauge output is an automatic plan review rejection in Florida. The Florida Building Code is updated on a three-year cycle tied to the state legislature's adoption schedule, not the IECC update cycle, which means Florida's energy requirements can be both more and less stringent than the current IECC depending on the specific provision.",
+      },
+      {
+        type: "h2",
+        content: "What A1 Engineering Provides",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A1 Engineering's green and energy compliance team provides the PE-stamped energy compliance documentation required for permit submittals across Texas, Tennessee, Arizona, and Florida — including green/energy plan review and inspection bundles, green code sign-off letters, and coordination with HERS raters to ensure that what's designed for the permit package is achievable in the field. For projects that have failed an energy inspection or a blower door test, we diagnose the gap between design performance and as-built performance and produce the documentation needed to get the project back on track.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The key thing to understand is that energy compliance is most effective — and most cost-efficient — when it's designed in from the start rather than verified at the end. A home that's designed to hit HERS 55 from the first set of drawings, with insulation specs, window specs, and mechanical selections coordinated to reach that target, gets there reliably. A home that's designed to 'be efficient' without a specific target in mind gets wherever the blower door test says it lands.",
+      },
+      { type: "states" },
+      { type: "rule" },
+      {
+        type: "paragraph",
+        content:
+          "If you're starting a new residential project and need PE-stamped energy compliance documentation, or if your project has failed an energy inspection and you need to get back on track, upload your project details and we'll respond within 24 hours. For urgent timelines, call us directly at (214) 382-9584.",
+      },
+      {
+        type: "tags",
+        items: [
+          { text: "HERS Rating" },
+          { text: "Energy Code Compliance" },
+          { text: "Blower Door Test" },
+          { text: "Green Building" },
+          { text: "RESNET" },
+          { text: "IECC 2021" },
+          { text: "Florida Building Code" },
+          { text: "Net Zero" },
+          { text: "New Construction" },
+          { text: "Texas" },
+          { text: "Tennessee" },
+          { text: "Arizona" },
+          { text: "Florida" },
+        ],
+      },
+      { type: "cta" },
+    ],
+  },
+
   // ── POST 7 — newest first ─────────────────────────────────────────────────
   {
     slug: "what-is-an-mep-drawing-set-and-why-every-commercial-project-needs-one",

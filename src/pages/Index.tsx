@@ -341,31 +341,31 @@ export default function Index() {
 
             {/* ── FEATURED (2 cols) — newest post ── */}
             <Link
-              to="/insights/what-is-an-mep-drawing-set-and-why-every-commercial-project-needs-one"
+              to="/insights/hers-ratings-explained-what-the-number-means-and-who-tests-it"
               className="group lg:col-span-2 block glass-card rounded-2xl overflow-hidden hover-lift border border-border/50"
             >
               <div className="h-full p-8 md:p-10 bg-gradient-to-br from-blueprint via-background to-steel/20 blueprint-pattern flex flex-col">
                 <div className="flex items-center gap-3 mb-5">
                   <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold">
                     <BadgeCheck className="h-3.5 w-3.5" />
-                    Planning & Design
+                    Green &amp; Energy
                   </div>
                   <span className="text-xs font-semibold text-primary bg-primary/10 border border-primary/20 px-2.5 py-1 rounded-full">
                     Latest
                   </span>
                 </div>
                 <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors leading-snug">
-                  What Is an MEP Drawing Set —{" "}
-                  <span className="text-gradient">and Why Does Every Commercial Project Need One?</span>
+                  HERS Ratings Explained:{" "}
+                  <span className="text-gradient">What the Number Actually Means and Who Has to Test It</span>
                 </h3>
                 <p className="text-muted-foreground text-base leading-relaxed mb-6 flex-1">
-                  MEP is one of those industry terms that gets thrown around constantly but rarely explained. Misunderstanding it — or submitting a permit package without it — can stall a commercial project for weeks.
+                  Your new home has a HERS score of 52. Your lender is asking for proof of compliance before closing. If you're nodding along while quietly having no idea what any of that means — this post is for you.
                 </p>
                 <div className="flex items-center gap-4 flex-wrap pt-4 border-t border-border/50">
                   <span className="inline-flex items-center gap-1.5 text-xs text-muted-foreground bg-secondary px-3 py-1.5 rounded-full font-medium">
-                    <Clock className="h-3.5 w-3.5" /> 6 min read
+                    <Clock className="h-3.5 w-3.5" /> 7 min read
                   </span>
-                  <span className="text-xs text-muted-foreground">April 30, 2026</span>
+                  <span className="text-xs text-muted-foreground">June 12, 2026</span>
                   <span className="inline-flex items-center text-primary text-sm font-semibold group-hover:gap-2 transition-all ml-auto">
                     Read Article <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </span>
@@ -375,25 +375,25 @@ export default function Index() {
 
             {/* ── SECONDARY (1 col) — previous post ── */}
             <Link
-              to="/insights/survey-vs-site-plan-vs-engineering-drawings-whats-the-difference"
+              to="/insights/what-is-an-mep-drawing-set-and-why-every-commercial-project-needs-one"
               className="group block glass-card rounded-2xl overflow-hidden hover-lift border border-border/50"
             >
               <div className="h-full p-6 flex flex-col">
                 <div className="w-full h-1 rounded-full bg-gradient-to-r from-primary/40 to-primary/10 mb-6" />
                 <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold mb-4 self-start">
                   <BadgeCheck className="h-3.5 w-3.5" />
-                  Planning & Design
+                  Planning &amp; Design
                 </div>
                 <h3 className="font-heading text-lg font-bold text-foreground mb-3 group-hover:text-primary transition-colors leading-snug flex-1">
-                  Survey vs Site Plan vs Engineering Drawings:{" "}
-                  <span className="text-gradient">What's the Difference?</span>
+                  What Is an MEP Drawing Set —{" "}
+                  <span className="text-gradient">and Why Does Every Commercial Project Need One?</span>
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-5">
-                  Contractors, lenders, and permit offices ask for these documents interchangeably. They're not the same — and confusing them is one of the most expensive mistakes on a development project.
+                  MEP is one of those industry terms that gets thrown around constantly but rarely explained. Misunderstanding it can stall a commercial project for weeks.
                 </p>
                 <div className="flex items-center gap-3 flex-wrap pt-4 border-t border-border/50 mt-auto">
                   <span className="inline-flex items-center gap-1.5 text-xs text-muted-foreground bg-secondary px-3 py-1.5 rounded-full font-medium">
-                    <Clock className="h-3.5 w-3.5" /> 8 min read
+                    <Clock className="h-3.5 w-3.5" /> 6 min read
                   </span>
                   <span className="inline-flex items-center text-primary text-xs font-semibold group-hover:gap-1.5 transition-all ml-auto">
                     Read <ArrowRight className="ml-0.5 h-3.5 w-3.5 group-hover:translate-x-0.5 transition-transform" />
