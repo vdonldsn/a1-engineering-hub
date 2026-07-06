@@ -47,6 +47,225 @@ export interface Post {
 }
 
 export const posts: Post[] = [
+  // ── POST 9 — newest first ─────────────────────────────────────────────────
+  {
+    slug: "certificate-of-occupancy-what-it-takes-and-why-projects-get-stuck",
+    title: "The Certificate of Occupancy: What It Takes to Get One and Why Projects Get Stuck",
+    titleAccent: "What It Takes to Get One and Why Projects Get Stuck",
+    deck: "The CO is the finish line of every construction project — and it's where more projects stall than most people expect. Here's exactly what inspectors are checking, what holds things up, and what you can do before construction starts to make sure the finish line doesn't move on you.",
+    category: "Permitting & Land Development",
+    readTime: "7 min read",
+    date: "July 6, 2026",
+    states: ["TX", "TN", "AZ", "FL"],
+    sections: [
+      {
+        type: "lead",
+        content:
+          "You're done building. The crew has cleared out. The paint is dry. And somewhere between your finished building and the moment you can legally occupy it sits a document — the Certificate of Occupancy — that the city hasn't issued yet. For some projects, getting the CO is a formality that takes a few days. For others, it turns into a weeks-long back-and-forth that nobody planned for, carrying costs keep running, and tenants or buyers are waiting. The difference almost always comes down to what was — or wasn't — done during design and construction.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A Certificate of Occupancy is the legal document issued by the local building authority that certifies a building is safe for its intended use and has been constructed in accordance with the approved permit documents, applicable building codes, and all required inspections. Without it, a building cannot be legally occupied — not by tenants, not by owners, not for any commercial purpose. Lenders won't disburse final loan draws. Property cannot be sold as improved. Businesses cannot open. The CO is the legal handshake between the jurisdiction and the project, and jurisdictions don't issue it until they're satisfied that everything checks out.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "What most builders and developers underestimate is how many independent systems the CO process touches simultaneously — structural, mechanical, electrical, plumbing, fire protection, energy compliance, accessibility, and civil site work all have to be signed off before a final CO is issued. Each one is its own inspection track. Each one can produce its own hold. And because they often run in parallel rather than sequentially, a problem discovered in one track doesn't just delay that track — it delays the whole project.",
+      },
+      {
+        type: "h2",
+        content: "What Inspectors Are Actually Checking at Final",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The final inspection for a CO isn't a single visit from a single inspector. It's a coordinated series of trade inspections — each conducted by an inspector with specific authority over their discipline — that all have to pass before the building official will issue the CO. Understanding what each trade inspector is looking for is the first step toward making sure none of them have a reason to come back a second time.",
+      },
+      {
+        type: "callout-info",
+        label: "What each final inspection covers",
+        items: [
+          {
+            bold: "Building / structural final.",
+            text: " Confirms the structure was built per the approved architectural and structural drawings. Checks that all framing, insulation, fireblocking, and finish work is complete and code-compliant. The building inspector typically signs off last, after all trade inspections are complete.",
+          },
+          {
+            bold: "Mechanical final.",
+            text: " HVAC equipment installed per approved mechanical drawings, ductwork complete and properly supported, exhaust fans functional, equipment access panels in place. In most jurisdictions a duct leakage test result is required at this stage.",
+          },
+          {
+            bold: "Electrical final.",
+            text: " Panel is complete with all breakers labeled, all outlets and fixtures installed and functional, GFCI and AFCI protection in required locations, smoke and CO detector placement per code. The electrical inspector will also verify that any EV chargers, solar systems, or generators were installed per the approved electrical drawings.",
+          },
+          {
+            bold: "Plumbing final.",
+            text: " All fixtures installed and functional, no visible leaks, water heater properly installed and protected, grease interceptor accessible and functional for food service occupancies. A final pressure test may be required.",
+          },
+          {
+            bold: "Energy compliance / green sign-off.",
+            text: " Blower door test result documented, HERS rating certificate on file if required by the jurisdiction, duct leakage test passing, and any required third-party energy inspection completed. In Texas this must be documented before the building final.",
+          },
+          {
+            bold: "Fire / life safety.",
+            text: " Smoke detectors, carbon monoxide detectors, fire sprinkler systems (where required), exit signage, emergency lighting, and fire-rated assemblies all verified. Commercial projects require a separate fire marshal inspection in most jurisdictions.",
+          },
+          {
+            bold: "Site / civil.",
+            text: " Driveway approach complete, accessible parking per approved site plan, stormwater controls in place, landscaping installed if required by the permit, and site grading draining away from the structure as designed.",
+          },
+        ],
+      },
+      {
+        type: "h2",
+        content: "The Seven Most Common Reasons COs Get Held Up",
+      },
+      {
+        type: "h3",
+        stepNum: "1",
+        content: "Open Permit Inspections From Earlier Phases",
+      },
+      {
+        type: "paragraph",
+        content:
+          "One of the most frustrating CO holds — and one of the most preventable — is an open inspection from a rough-in or mid-construction phase that was never called in and signed off. The framing inspection that got missed when the crew moved on. The underground plumbing that was covered before the inspector came out. The electrical rough-in that passed but was never documented in the permit system. Building departments track every required inspection on the permit record, and a final CO cannot be issued until every prior inspection on that record shows a passing result.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The fix is straightforward but requires discipline: keep a running inspection log throughout construction, call inspections at the right phases, and don't cover work until you have a documented pass. On larger projects this is worth assigning to a dedicated project manager or superintendent whose job includes tracking inspection status against the permit's required inspection list.",
+      },
+      {
+        type: "h3",
+        stepNum: "2",
+        content: "Energy Compliance Documentation Missing or Incomplete",
+      },
+      {
+        type: "paragraph",
+        content:
+          "In Texas, Tennessee, Arizona, and Florida, energy compliance documentation isn't just a permit submittal requirement — it's a CO requirement. The blower door test result, the HERS rating certificate, the duct leakage test documentation, and any required third-party energy inspection reports all have to be on file with the jurisdiction before the CO is issued. Projects that treat energy compliance as a design-phase checkbox and then don't follow through with the required field testing and documentation consistently hit this wall at the end.",
+      },
+      {
+        type: "callout-warning",
+        label: "Florida's separate energy compliance track",
+        content:
+          "In Florida, energy compliance for residential construction is governed by the Florida Building Code — Energy Conservation chapter, and compliance must be documented using EnergyGauge USA software specifically. The compliance report has to be on file before the final building inspection. Projects that used REScheck or COMcheck for the permit submittal (because that's what the designer was familiar with from other states) discover at CO time that Florida doesn't accept those reports — and they have to commission a new EnergyGauge analysis on the completed building. That takes time and delays the CO.",
+      },
+      {
+        type: "h3",
+        stepNum: "3",
+        content: "Accessibility Items That Weren't Caught at Plan Review",
+      },
+      {
+        type: "paragraph",
+        content:
+          "ADA and state accessibility code requirements generate CO holds on commercial projects with remarkable consistency. The most common scenario is accessibility items that weren't flagged at plan review — either because the jurisdiction's plan reviewer didn't catch them or because the project changed during construction in ways that affect accessible routes — showing up as failed inspection items at the final. Accessible route continuity from the public way to the building entrance, parking space dimensions and slopes, restroom clearances, and service counter heights are the items that come up most often.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "In Texas, commercial projects must go through a separate TAS (Texas Accessibility Standards) review administered by TDLR before construction begins on accessibility-related elements. If the TAS certificate was obtained but construction deviated from the approved drawings, the project has to go through a TAS amendment before the CO can issue. This is a state-level review process, not a local one, and it takes time — time that wasn't in the schedule.",
+      },
+      {
+        type: "h3",
+        stepNum: "4",
+        content: "Site Work That Isn't Complete at Final",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The building itself is done. But the site plan that was approved with the permit showed landscaping, accessible parking stripes and signage, a completed driveway approach meeting the city's sight-line requirements, and stormwater controls properly installed and stabilized. If any of those items aren't complete at the time of the site inspection, the CO is held until they are. Landscaping in particular gets underestimated — many jurisdictions require a minimum percentage of the site to be landscaped per an approved landscape plan, and drought conditions, late-season planting windows, or simple scheduling oversights leave sites without required vegetation at CO time.",
+      },
+      {
+        type: "h3",
+        stepNum: "5",
+        content: "PE Sign-Off Letters That Weren't Ordered Until the End",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Some jurisdictions require a letter from the engineer of record — or from a third-party PE — confirming that the structural work was completed in accordance with the approved engineering drawings. This might be a foundation certification letter after the slab is poured, a framing inspection letter after the structure is complete, or a general letter of compliance at project close. These letters require a PE to physically inspect the work, review the documentation, and produce a stamped letter. That takes scheduling time and turnaround time — neither of which exists if the CO hold comes as a surprise on the day of the final inspection.",
+      },
+      {
+        type: "h3",
+        stepNum: "6",
+        content: "Utility Connections Not Finalized",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A building that isn't connected to permanent utility services — permanent electrical service from the utility (not temporary construction power), permanent water and sewer connections, and gas service if applicable — typically can't receive a CO. Utility service connections have their own timeline that's entirely outside the jurisdiction's control. In high-growth markets like DFW and the Phoenix metro, utility service connection lead times can run eight to twelve weeks from application to energization. Projects that don't initiate the utility service application early in construction consistently find themselves in a finished building waiting on the utility company while the CO sits on hold.",
+      },
+      {
+        type: "h3",
+        stepNum: "7",
+        content: "Changes During Construction That Weren't Permitted",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Field modifications happen on every project. A wall moved a few feet for layout reasons. An HVAC unit upgraded to a larger size. A window added that wasn't on the approved drawings. When those modifications affect structural, mechanical, electrical, or energy compliance elements and weren't submitted as a revised permit, the final inspector sees work that doesn't match the approved drawings — and issues a correction notice requiring either a revised permit or a PE letter documenting that the change is code-compliant. Either path adds time.",
+      },
+      {
+        type: "pullquote",
+        content:
+          "The CO is where every decision made during design and construction either pays off or comes due. Projects that planned for it get there cleanly. Projects that didn't have a list of things to fix with a meter running.",
+      },
+      {
+        type: "h2",
+        content: "How to Plan for a Clean CO From Day One",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The CO timeline is entirely predictable if you work backwards from it during design. Every required inspection, every required document, every required third-party certification can be identified at the start of the project from the approved permit documents and the jurisdiction's CO checklist. Most jurisdictions publish their CO requirements — or will tell you exactly what's required if you ask before you submit. The projects that hit CO holds are almost never surprised by what the holds are — they just didn't plan for them.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Practically, this means identifying energy compliance testing requirements at design, not at rough-in. It means applying for permanent utility service the week permits are pulled, not the week construction is done. It means scheduling the TAS review in Texas at the same time the local permit is submitted, not after. It means tracking every required inspection against the permit inspection list throughout construction, not reviewing it for the first time when the final is called.",
+      },
+      {
+        type: "h2",
+        content: "Where A1 Engineering Fits In",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A1 Engineering handles the engineering side of CO readiness across Texas, Tennessee, Arizona, and Florida — PE-stamped energy compliance documentation, foundation and structural certification letters, green code sign-off, and engineering inspection reports that jurisdictions require as part of the CO package. Because we're involved from the permit submittal phase, we're tracking what documentation the CO will require from day one rather than discovering it at the end.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "For projects that are already built and stuck at CO — whether it's an energy compliance gap, a missing PE letter, a failed blower door test, or a structural field modification that needs documentation — we diagnose the specific hold and produce the documentation or inspection report that resolves it. Getting a CO unstuck is a well-defined problem once you know exactly what the jurisdiction is waiting for.",
+      },
+      { type: "states" },
+      { type: "rule" },
+      {
+        type: "paragraph",
+        content:
+          "If you're approaching CO on a project and need PE-stamped documentation, a certification letter, or energy compliance sign-off — or if your CO is already on hold and you need to figure out why — upload your project details and we'll respond within 24 hours. For time-sensitive situations, call us directly at (214) 382-9584.",
+      },
+      {
+        type: "tags",
+        items: [
+          { text: "Certificate of Occupancy" },
+          { text: "Building Permits" },
+          { text: "Final Inspection" },
+          { text: "Energy Compliance" },
+          { text: "ADA Accessibility" },
+          { text: "PE Sign-Off" },
+          { text: "Construction Closeout" },
+          { text: "Texas" },
+          { text: "Tennessee" },
+          { text: "Arizona" },
+          { text: "Florida" },
+        ],
+      },
+      { type: "cta" },
+    ],
+  },
+
   // ── POST 8 — newest first ─────────────────────────────────────────────────
   {
     slug: "hers-ratings-explained-what-the-number-means-and-who-tests-it",
