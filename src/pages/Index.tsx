@@ -341,7 +341,7 @@ export default function Index() {
 
             {/* ── FEATURED (2 cols) — newest post ── */}
             <Link
-              to="/insights/certificate-of-occupancy-what-it-takes-and-why-projects-get-stuck"
+              to="/insights/zoning-vs-building-code-two-different-sets-of-rules"
               className="group lg:col-span-2 block glass-card rounded-2xl overflow-hidden hover-lift border border-border/50"
             >
               <div className="h-full p-8 md:p-10 bg-gradient-to-br from-blueprint via-background to-steel/20 blueprint-pattern flex flex-col">
@@ -355,17 +355,17 @@ export default function Index() {
                   </span>
                 </div>
                 <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors leading-snug">
-                  The Certificate of Occupancy:{" "}
-                  <span className="text-gradient">What It Takes to Get One and Why Projects Get Stuck</span>
+                  Zoning vs Building Code:{" "}
+                  <span className="text-gradient">Two Different Sets of Rules That Both Govern Your Project</span>
                 </h3>
                 <p className="text-muted-foreground text-base leading-relaxed mb-6 flex-1">
-                  The CO is the finish line of every construction project — and it's where more projects stall than most people expect. Here's exactly what inspectors are checking and what holds things up.
+                  Most developers assume one approval means they're good to go. It doesn't. Zoning and building code are two completely separate regulatory systems — and failing to understand both is one of the most expensive mistakes in land development.
                 </p>
                 <div className="flex items-center gap-4 flex-wrap pt-4 border-t border-border/50">
                   <span className="inline-flex items-center gap-1.5 text-xs text-muted-foreground bg-secondary px-3 py-1.5 rounded-full font-medium">
-                    <Clock className="h-3.5 w-3.5" /> 7 min read
+                    <Clock className="h-3.5 w-3.5" /> 6 min read
                   </span>
-                  <span className="text-xs text-muted-foreground">July 6, 2026</span>
+                  <span className="text-xs text-muted-foreground">July 15, 2026</span>
                   <span className="inline-flex items-center text-primary text-sm font-semibold group-hover:gap-2 transition-all ml-auto">
                     Read Article <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </span>
@@ -375,21 +375,21 @@ export default function Index() {
 
             {/* ── SECONDARY (1 col) — previous post ── */}
             <Link
-              to="/insights/hers-ratings-explained-what-the-number-means-and-who-tests-it"
+              to="/insights/certificate-of-occupancy-what-it-takes-and-why-projects-get-stuck"
               className="group block glass-card rounded-2xl overflow-hidden hover-lift border border-border/50"
             >
               <div className="h-full p-6 flex flex-col">
                 <div className="w-full h-1 rounded-full bg-gradient-to-r from-primary/40 to-primary/10 mb-6" />
                 <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold mb-4 self-start">
                   <BadgeCheck className="h-3.5 w-3.5" />
-                  Green &amp; Energy
+                  Permitting &amp; Land Development
                 </div>
                 <h3 className="font-heading text-lg font-bold text-foreground mb-3 group-hover:text-primary transition-colors leading-snug flex-1">
-                  HERS Ratings Explained:{" "}
-                  <span className="text-gradient">What the Number Actually Means and Who Has to Test It</span>
+                  The Certificate of Occupancy:{" "}
+                  <span className="text-gradient">What It Takes to Get One and Why Projects Get Stuck</span>
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-5">
-                  Your lender is asking for HERS compliance before closing. If you're nodding along while having no idea what that means — this post is for you.
+                  The CO is the finish line of every construction project — and it's where more projects stall than most people expect.
                 </p>
                 <div className="flex items-center gap-3 flex-wrap pt-4 border-t border-border/50 mt-auto">
                   <span className="inline-flex items-center gap-1.5 text-xs text-muted-foreground bg-secondary px-3 py-1.5 rounded-full font-medium">

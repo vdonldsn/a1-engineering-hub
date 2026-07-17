@@ -47,6 +47,242 @@ export interface Post {
 }
 
 export const posts: Post[] = [
+  // ── POST 10 — newest first ────────────────────────────────────────────────
+  {
+    slug: "zoning-vs-building-code-two-different-sets-of-rules",
+    title: "Zoning vs Building Code: Two Different Sets of Rules That Both Govern Your Project",
+    titleAccent: "Two Different Sets of Rules That Both Govern Your Project",
+    deck: "Most developers assume one approval means they're good to go. It doesn't. Zoning and building code are two completely separate regulatory systems, administered by different departments, enforced at different stages — and failing to understand both is one of the most common and expensive mistakes in land development.",
+    category: "Permitting & Land Development",
+    readTime: "6 min read",
+    date: "July 15, 2026",
+    states: ["TX", "TN", "AZ", "FL"],
+    sections: [
+      {
+        type: "lead",
+        content:
+          "Here's a scenario that plays out constantly across Texas, Tennessee, Arizona, and Florida: a developer buys a piece of land, gets the building plans approved by the building department, starts construction — and then gets stopped by the planning department because the project violates a zoning requirement nobody caught during design. The building plans were fine. The zoning wasn't. Two different departments, two different approvals, and a project on hold.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The root cause is a misconception that's remarkably common even among experienced builders: that 'getting a permit' is a single thing. It isn't. A building permit and zoning compliance are two separate regulatory tracks that run in parallel, answer different questions, and can independently stop a project at any phase. Understanding the difference between them — and knowing which questions each one answers — is foundational to keeping any development project on schedule.",
+      },
+      {
+        type: "h2",
+        content: "What Zoning Actually Governs",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Zoning is land-use law. It's the set of rules that governs what can be built on a given piece of land — not how it's built, but what it's used for, how big it can be, how close it can sit to the property lines, and how much of the lot it can cover. Zoning is administered by the local planning and zoning department, and it derives from the jurisdiction's master plan and zoning ordinance — documents that assign every parcel in the city or county to a zoning district with specific development standards.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "When you look up a property's zoning classification — R-1, C-2, MF-3, I-1, and so on — you're looking at a code that maps to a set of use permissions and development standards in the zoning ordinance. The use permissions tell you what's allowed on the land: single-family residential, multi-family residential, retail, office, industrial, or mixed use. The development standards tell you how development on that land must be configured: minimum lot size, minimum lot width, front and side and rear setbacks, maximum building height, maximum lot coverage, maximum impervious cover, parking requirements, and landscaping requirements.",
+      },
+      {
+        type: "callout-info",
+        label: "What zoning controls",
+        items: [
+          {
+            bold: "Land use.",
+            text: " What the property can be used for — residential, commercial, industrial, agricultural, or mixed use. A building that's structurally perfect still can't be built if the proposed use isn't permitted in the zoning district.",
+          },
+          {
+            bold: "Setbacks.",
+            text: " Minimum distances from property lines, rights-of-way, and easements within which no structure can be built. These vary by zoning district, lot size, and sometimes by street classification.",
+          },
+          {
+            bold: "Building height.",
+            text: " Maximum allowable height in feet or stories. In some districts this is absolute; in others it varies based on proximity to adjacent uses.",
+          },
+          {
+            bold: "Lot coverage and impervious cover.",
+            text: " The maximum percentage of a lot that can be covered by structures and paved surfaces. This is a zoning control, not a building code control — and it's checked at the planning department, not the building department.",
+          },
+          {
+            bold: "Parking requirements.",
+            text: " Minimum number of parking spaces based on use and square footage. A restaurant has different parking requirements than an office, which has different requirements than a medical clinic.",
+          },
+          {
+            bold: "Density.",
+            text: " For residential development, the maximum number of dwelling units per acre. This controls how many units can be built on a multi-family site regardless of how the building is designed.",
+          },
+        ],
+      },
+      {
+        type: "h2",
+        content: "What Building Code Actually Governs",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Building code is construction law. It governs how a building is built — the structural systems, fire resistance, means of egress, mechanical systems, electrical systems, plumbing systems, energy performance, and accessibility features. Building code doesn't care about land use or setbacks or parking. It cares about whether the building is safe for the people inside it.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "In Texas, Tennessee, Arizona, and Florida, building code is based on the International Building Code (IBC) for commercial construction and the International Residential Code (IRC) for single-family and duplex construction, each adopted with state-specific amendments. The building code is administered by the local building department, and compliance is verified through plan review of the construction drawings and inspection at multiple phases of construction. The building department issues the building permit, conducts inspections, and ultimately issues the Certificate of Occupancy.",
+      },
+      {
+        type: "callout-info",
+        label: "What building code controls",
+        items: [
+          {
+            bold: "Structural systems.",
+            text: " Foundation design, framing, load paths, connections, and material specifications. Governed by the IBC structural provisions and referenced standards like ASCE 7.",
+          },
+          {
+            bold: "Fire resistance and protection.",
+            text: " Fire-rated assemblies between occupancies, sprinkler systems, fire alarm systems, and means of egress. Occupancy classification drives these requirements.",
+          },
+          {
+            bold: "Means of egress.",
+            text: " Exit locations, corridor widths, travel distances, door hardware, and emergency lighting. The IBC specifies these based on occupancy type and building size.",
+          },
+          {
+            bold: "Mechanical, electrical, and plumbing systems.",
+            text: " HVAC design, electrical service sizing, plumbing fixture counts, and system installation requirements. Each trade has its own code chapter and inspection track.",
+          },
+          {
+            bold: "Energy performance.",
+            text: " Insulation values, window performance, mechanical system efficiency, and air sealing requirements. Governed by the IECC (or Florida's own energy code) with state amendments.",
+          },
+          {
+            bold: "Accessibility.",
+            text: " ADA and state accessibility standards for commercial construction. In Texas, TAS compliance is a separate state-level review administered by TDLR in addition to the local building code review.",
+          },
+        ],
+      },
+      {
+        type: "pullquote",
+        content:
+          "Zoning asks: can you build it here? Building code asks: can you build it this way? You need both answers to be yes before a project is legally buildable.",
+      },
+      {
+        type: "h2",
+        content: "Why They're Administered Separately — and Why That Matters",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The planning department and the building department are separate city departments with separate staff, separate review processes, and separate approval authority. In most jurisdictions, a project that needs both zoning approval and a building permit goes through two distinct review tracks that may run sequentially or in parallel depending on the municipality.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "In many Texas cities, for example, a site plan must be approved by the planning department before a building permit application can even be submitted to the building department. The planning department reviews the site plan for zoning compliance — setbacks, lot coverage, use, parking, and landscaping. Only after the site plan is approved does the building department review the construction drawings for code compliance. A project that submits to the building department before clearing planning will either be rejected at intake or will receive a building permit that's later invalidated when planning flags the zoning issue.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "In other jurisdictions, both reviews happen simultaneously — the site plan goes to planning and the construction drawings go to building at the same time, with each department reviewing independently. The building permit isn't issued until both departments sign off. This parallel track approach is faster when it works, but it means a zoning correction and a structural correction can both come back at the same time, requiring coordinated revisions to multiple document sets.",
+      },
+      {
+        type: "h2",
+        content: "The Most Common Zoning Mistakes That Delay Projects",
+      },
+      {
+        type: "h3",
+        stepNum: "1",
+        content: "Building a Use That Isn't Permitted By Right",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The most fundamental zoning mistake is proposing a use that the zoning district doesn't allow. This sounds obvious, but it happens regularly because zoning ordinances are complex documents and uses don't always map intuitively to district classifications. A medical office and a general office may have different use permissions in the same district. A restaurant with a drive-through may be prohibited where a restaurant without one is permitted. A short-term rental in a residential zone may require a specific permit or may be prohibited entirely depending on the jurisdiction and recent ordinance updates.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "In Texas, short-term rental regulations have been in flux across most major metros as cities have adopted, amended, and in some cases reversed STR ordinances. A property that was legal as an STR under last year's ordinance may not be legal under this year's. Zoning research needs to be done at the time of the transaction or development decision, not at the time of permit application.",
+      },
+      {
+        type: "h3",
+        stepNum: "2",
+        content: "Setback Violations That Emerge During Plan Review",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Setback violations are the most common zoning correction on permit submittals. The building fits on the lot — the dimensions work out on paper — but when the planning department measures the distance from the proposed structure to the property line, an easement, or the right-of-way, the setback is short. Sometimes by inches. The cause is almost always one of two things: an outdated or inaccurate property boundary being used as the basis for the site plan, or a setback requirement that changed under a recent zoning ordinance amendment that the designer wasn't aware of.",
+      },
+      {
+        type: "h3",
+        stepNum: "3",
+        content: "Parking Calculations That Don't Account for All Uses",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Mixed-use projects and projects with multiple tenant types frequently run into parking calculation errors because the designer applied a single parking ratio to the entire building rather than calculating required parking for each use separately and adding them together. A building with ground-floor retail and upper-floor office space has different parking requirements for each component, and the total parking required is the sum of both — not a blended average. Getting this wrong produces a site plan with insufficient parking that gets flagged by the planning department and requires a redesign of the parking layout.",
+      },
+      {
+        type: "h3",
+        stepNum: "4",
+        content: "Variances That Could Have Been Avoided With Better Site Planning",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A variance is a formal request for permission to deviate from a zoning standard — a reduced setback, a reduced parking count, an increased height limit. Variances require a public hearing before the zoning board of adjustment, a finding that the property has a unique hardship that makes strict compliance unreasonable, and a decision by the board that can be appealed. The process takes weeks to months and has no guaranteed outcome. Most variances that get applied for could have been avoided if the site planning process had identified the constraint early enough to design around it.",
+      },
+      {
+        type: "callout-warning",
+        label: "Variances are a last resort, not a planning strategy",
+        content:
+          "Some developers treat variance applications as a standard part of the development process — a way to get a little more building on a constrained site. This is a high-risk strategy. Variance approvals depend on board composition, neighborhood opposition, and political factors that have nothing to do with the quality of the project. A development plan that depends on a variance approval is a development plan that may not be buildable. Identify zoning constraints before the site plan is designed, not after.",
+      },
+      {
+        type: "h2",
+        content: "How the Engineering Team Fits Into Both Tracks",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The engineering team's role spans both regulatory tracks — and that's precisely why coordination between the site plan (which addresses zoning) and the construction drawings (which address building code) matters so much. A setback shown on the site plan has to match the foundation placement shown on the structural drawings. A parking count on the site plan has to align with the accessible parking spaces shown on the civil drawings. An impervious cover calculation on the site plan has to account for the same surfaces that appear in the drainage design.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "When the site plan and the construction drawings are produced by the same coordinated team, these consistencies are built in from the start. When they're produced by different firms working from different base documents, the inconsistencies surface at plan review — sometimes in both departments simultaneously, requiring parallel corrections to both document sets. That's the scenario that turns a four-week permit process into a twelve-week one.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A1 Engineering handles the engineering and design documentation for both tracks — PE-stamped site plans that satisfy zoning review and PE-stamped construction drawings that satisfy building code review — across Texas, Tennessee, Arizona, and Florida. Starting from a current survey and a thorough zoning analysis, we produce documents that are internally consistent and jurisdiction-specific from the first submission.",
+      },
+      { type: "states" },
+      { type: "rule" },
+      {
+        type: "paragraph",
+        content:
+          "If you're starting a project and want to make sure both the zoning and building code tracks are covered before design begins, upload your project details and we'll respond within 24 hours. For time-sensitive submittals, call us directly at (214) 382-9584.",
+      },
+      {
+        type: "tags",
+        items: [
+          { text: "Zoning" },
+          { text: "Building Code" },
+          { text: "Land Development" },
+          { text: "Building Permits" },
+          { text: "Site Planning" },
+          { text: "Variances" },
+          { text: "Setbacks" },
+          { text: "Parking Requirements" },
+          { text: "IBC" },
+          { text: "Texas" },
+          { text: "Tennessee" },
+          { text: "Arizona" },
+          { text: "Florida" },
+        ],
+      },
+      { type: "cta" },
+    ],
+  },
+
   // ── POST 9 — newest first ─────────────────────────────────────────────────
   {
     slug: "certificate-of-occupancy-what-it-takes-and-why-projects-get-stuck",
